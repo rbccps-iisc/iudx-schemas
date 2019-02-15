@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "describes": "Schema of catalog entries with associated data resources.",
+  "type": "object",
+  "allOf": [
+   {"$ref": "iudx_item_schema.json#"}
+  ],
+  "properties": {
+     "accessInformation": {
+        "type": "array",
+        "describes": "List of access mechanisms available for data associated with this catalog item",
+        "items": {
+            "type": "object",
+            "properties": {
+               "resourceServerId": {
+                  "type": "string",
+                  "describes": "Id of the resource with the 'resource-server'"
+               },
+               "resourceType": {
+                  "type": "string",
+                  "enum": ["table", "file", "message", "messageStream", "gis", "media", "service", "other"],
+                  "describes": "Type of data resource"
+               },
+               "accessSchemaType": {
+                  "type": "string",
+                  "describes": "Type of access mechanism. For example, 'openAPI', 'asyncAPI', 'custom'. Can be changed to ENUM later."
+               },
+               "accessSchemaURL": {
+                  "type": "string",
+                   "format": "uri",
+                  "describes": "URL that has more information about meta-data of this resource"
+               },
+               "accessSchema": {
+                   "type": "object",
+                   "describes": "An object (api JSON object, or a json-schema) to describe access mechanism for this data resource. For example, an OpenAPI JSON object can be used to describe APIs for interacting with this resource. "
+               }
+            },
+            "required": ["resourceServerId", "accessSchemaType"]
+        }
+     }
+  },
+  "required":[ "accessInformation"]
+}

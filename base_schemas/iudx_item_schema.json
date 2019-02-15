@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "describes": "Base schema of catalog entries",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "describes": "Unique identifier of the data resource within this domain"
+    },
+    "itemDescription": {
+      "type": "string",
+      "describes": "Text description of this item."
+    },
+    "refDataModel": {
+      "type": "string",
+      "describes": "Reference to the data model for this catalog item. Will be validated against this data-model(schema). It is assumed that the referred to data-model(schema) has already been uploaded into the catalog OR stored in a pre-defined repository."
+    },
+    "provider": {
+      "$ref": "iudx_base_def.json#/definitions/entityIdSchema",
+      "describes": "Describes the 'provider' entity for this catalog item."
+    },
+    "authorisationFormat": {
+       "type": "string",
+       "describes": "Format of authorisation token. For example, 'OpenAuth2.0', 'UMA2.0', 'AzureSAS' and similar others."
+    },
+    "tags": {
+      "$ref": "iudx_base_def.json#/definitions/tagsSchema"
+    },
+    "__itemStatus": {
+       "type": "string",
+       "enum": ["active", "deprecated"],
+       "describes": "Status of an item. In production version of catalogue, for purposes of provenance, one can choose to not delete an item but set its status to 'deprecated'. All the older versions of an updated item may be persisted by setting their status as 'deprecated'. Only the current item containing latest updates should have status set to 'active'."
+    },
+    "__itemType": {
+       "type": "string",
+       "enum": ["schema", "item"],
+       "describes": "Type of an item. Schema or an information document."
+    },
+    "__createdAt": {
+       "type": "string",
+       "format": "date-time",
+       "describes": "Date of creation of this entry in the catalogue."
+    },
+    "__updatedAt": {
+       "type": "string",
+       "format": "date-time",
+       "describes": "Last update date/time for this entry in the catalogue."
+    },
+    "__deprecatedAt": {
+       "type": "string",
+       "format": "date-time",
+       "describes": "Date/time when this entry was deprecated (status set to deprecated)."
+    }
+  },
+  "additionalProperties": {
+    "type": ["number", "integer", "null", "string", "object", "boolean", "array"]
+  },
+  "required": ["id", "refDataModel", "provider", "tags"]
+}

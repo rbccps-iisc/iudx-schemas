@@ -1,0 +1,164 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "describes": "Base schema of catalog entries",
+  "type": "object",
+  "definitions": {
+    "tagsSchema": {
+      "type": "array",
+      "minItems": 0,
+      "uniqueItems":true,
+      "describes": "Any strings which annotate this resource. It intends to provide discovery hints.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sharingTypeSchema" : {
+      "type": "string",
+      "enum" : ["public", "private", "protected", "blocked"]
+    },
+    "accessMechanismSchema": {
+      "type": "object",
+      "properties": {
+        "accessEndPoint": {
+          "type": "string",
+          "format": "uri",
+          "describes": "URL end point to access the resource"
+        },
+        "accessAPIDoc": {
+          "type": "string",
+          "format": "uri",
+          "describes": "API documenttion for accessing this resource"
+        }
+      },
+      "required": ["accessEndPoint"]
+    },
+    "entityIdSchema": {
+      "type": "object",
+      "properties": {
+        "entityId": {
+          "type": "string",
+          "describes": "ID of the Entity. Should be unique within this IUDX exchange."
+        },
+        "entityIdentityType": {
+          "type": "string",
+          "describes": "Format of Identification token for the entity. For example: X509, OpenIDConnect etc."
+        },
+        "entityIdentityProviderURL": {
+           "type": "string",
+           "format": "uri",
+           "describes": "Describes the link to the identity provide for this entity" 
+        },
+        "entityContactEmail": {
+           "type": "string",
+           "format": "email",
+           "describes": "Email contact address for this entity" 
+        },
+        "entityURL": {
+           "type": "string",
+           "format": "uri",
+           "describes": "Web page for this entity" 
+        },
+        "entityContactPhone": {
+           "type": "string",
+           "describes": "Contact Phone number for this entity" 
+        }
+      },
+      "required": [ "entityId", "entityIdentityType", "entityIdentityProviderURL" ]
+    },
+    "geoLocationSchema": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "string",
+          "describes": "Street address of the resource"
+        },
+        "city": {
+          "type": "string",
+          "describes": "City where the resource is located"
+        },
+        "district": {
+          "type": "string",
+          "describes": "District where the resource is located"
+        },
+        "state": {
+          "type": "string",
+          "describes": "State where the resource is located"
+        },
+        "mapid": {
+          "type": "string",
+          "format": "uri",
+          "describes": "Maps the resource on a map"
+        },
+        "indoor_location": {
+          "type": "object",
+          "describes": "Indoor location of the resource",
+          "properties": {
+             "building_name": {
+               "type": "string",
+               "describes": "Name of the building where the resource is located"
+             },
+             "address": {
+               "type": "string",
+               "describes": "Address of the building where the resource is located"
+             },
+             "floor": {
+               "type": "string",
+               "describes": "Floor number where the resource is located"
+             },
+             "room": {
+               "type": "string",
+               "describes": "Room Number/Description where the resource is located"
+             },
+             "misc_location_info": {
+               "type": "string",
+               "describes": "Other miscellaneous information about the indoor location of the resource (e.g., below the staircase or on the wall next to the door etc."
+             }
+          }
+        }
+      }
+    },
+    "latlongschema": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "ontologyRef": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "value",
+        "ontologyRef"
+      ]
+    },
+    "resourceDataSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": [ "string", "array" ]
+        },
+        "properties": {
+          "type": "object",
+          "patternProperties": {
+            "[a-zA-Z0-9]+$": {
+              "type": "object"
+            }
+          }
+        },
+        "units": {
+           "type": "string",
+           "describes": "units for the measured quantity if applicable"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+          "type",
+          "description"
+      ]
+    }
+  }
+}
