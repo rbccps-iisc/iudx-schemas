@@ -41,6 +41,7 @@
        "describes": "Other ways of describing a location. For example, geoHash, mapid etc."
      },
      "geoJSONGeometrySchema": {
+        "@context": "https://purl.org/geojson/vocab#geometry",
         "$ref": "http://geojson.org/schema/Geometry.json#"
      }
   }
