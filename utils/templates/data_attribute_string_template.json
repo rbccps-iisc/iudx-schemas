@@ -1,0 +1,6 @@
+{
+    "$attr": {
+        "type": "string",
+        "description": "$descr"
+    }
+}

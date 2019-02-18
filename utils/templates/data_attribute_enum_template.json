@@ -1,0 +1,7 @@
+{
+    "$attr": {
+        "type": "string",
+        "enum": [""],
+        "description": "$descr"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "name": "$name",
+    "describes": "$describes",
+    "type": "object",
+    "allOf": [
+        {"$ref": "iudx_data_item_schema.json#"}
+    ],
+    "properties": {
+        "dataAttributes":{
+        }
+    },
+    "required":[]
+}

@@ -1,0 +1,8 @@
+{
+    "$attr": {
+        "type": "integer",
+        "units": "string",
+        "minimum": "$minimum",
+        "maximum": "$maximum"
+    }
+}
