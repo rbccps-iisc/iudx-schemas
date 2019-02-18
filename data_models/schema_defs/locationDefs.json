@@ -37,8 +37,11 @@
       "additionalProperties": false
      },
      "additionalLocationSchema": {
-      "type": "object",
-      "describes": "Other ways of describing a location. For example, geoHash, mapid etc."
+       "type": "object",
+       "describes": "Other ways of describing a location. For example, geoHash, mapid etc."
+     },
+     "geoJSONGeometrySchema": {
+        "$ref": "http://geojson.org/schema/Geometry.json#"
      }
   }
 }
