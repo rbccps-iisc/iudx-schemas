@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "describes": "Base schema of catalog entries",
+  "type": "object",
+  "definitions": {
+     "locationSchema": {
+      "type": "object",
+      "describes": "Schema to describe a geographic location",
+      "@context": "https://schema.org/GeoCoordinates",
+      "properties": {
+         "address": {
+            "@context": "https://schema.org/address",
+            "type": "string",
+            "describes": "Address of the location"
+         },
+         "addressCountry": {
+            "type": "string",
+            "describes": ""
+         },
+         "latitude": {
+            "type": "number",
+            "describes": "Latitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
+         },
+         "longitude": {
+            "type": "number",
+            "describes": "Longitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
+         },
+         "elevation": {
+            "type": "number",
+            "describes": "Elevation of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
+         },
+         "postalCode": {
+            "type": "string",
+            "describes": "Pin code of the location"
+         }
+      },
+      "additionalProperties": false
+     },
+     "additionalLocationSchema": {
+      "type": "object",
+      "describes": "Other ways of describing a location. For example, geoHash, mapid etc."
+     }
+  }
+}
