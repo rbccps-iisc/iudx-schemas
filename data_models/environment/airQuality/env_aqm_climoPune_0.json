@@ -1,0 +1,222 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "iudx_data_item_schema.json#"
+        }
+    ],
+    "describes": "Air Quality data model for AQM sensors deployed in Pune City.",
+    "properties": {
+        "location": {
+           "describes": "Physical location of the AQM sensor", 
+           "$ref": "$project_root/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+        },
+        "name": {
+            "describes": "Name of the device",
+            "$ref": "$project_root/data_models/schema_defs/thingDefs.json#/definitions/nameSchema"
+        },
+        "DeviceId": {
+            "describes": "Device ID's as per the device data model",
+            "type": "string"
+        },
+        "Latitude": {
+            "describes": "Latitude of the AQM sensor",
+            "$ref": "$project_root/data_models/schema_defs/locationDefs.json#/definitions/latitude"
+        },
+        "Longitude": {
+            "describes": "Latitude of the AQM sensor",
+            "$ref": "$project_root/data_models/schema_defs/locationDefs.json#/definitions/longitude"
+        },
+        "AIR_PRESSURE": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "AQI": {
+            "describes": "Overall AQI ",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "AQI_Pollutant": {
+            "describes": "Dominant pollutant in this region",
+            "enum": [
+                "CO",
+                "SO2",
+                "NO",
+                "NO2",
+                "PM_10",
+                "PM2_5",
+                "Ozone"
+            ],
+            "type": "string"
+        },
+        "CO2_MAX": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "CO2_MIN": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "CO_MAX": {
+            "describes": "NUL",
+            "type": "string"
+        },
+        "CO_MIN": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "Category": {
+            "describes": "Quality indication",
+            "enum": [
+                "Good",
+                "Moderate",
+                "Poor",
+                "nullvalue"
+            ],
+            "type": "string"
+        },
+        "Humidity": {
+            "describes": "Relative humidity",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "RH"
+        },
+        "Light": {
+            "describes": "Light in lux",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "lux"
+        },
+        "NO2_MAX": {
+            "describes": "Maximum NO2 Concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "NO2_MIN": {
+            "describes": "Minimum NO2 Concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "NO_MAX": {
+            "describes": "Maximum NO concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "NO_MIN": {
+            "describes": "Minimum NO concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "ON_OFF_STATUS": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "OZONE_MAX": {
+            "describes": "Maximum O3 concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "OZONE_MIN": {
+            "describes": "Minimum O3 concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "PM10_MAX": {
+            "describes": "Maximum PM10 concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "PM10_MIN": {
+            "describes": "Minimum PM10 concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "PM2_MAX": {
+            "describes": "Maximum PM2.5 Concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "PM2_MIN": {
+            "describes": "Maximum PM2.5 concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "SO2_MAX": {
+            "describes": "Maximum SO2 concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "SO2_MIN": {
+            "describes": "Minimum SO2 concentration",
+            "maximum": 1000.0,
+            "minimum": 0.0,
+            "type": "integer",
+            "units": "NULL"
+        },
+        "Status": {
+            "describes": "Indiates if the resource is on or off",
+            "enum": [
+                "On",
+                "Off"
+            ],
+            "type": "string"
+        },
+        "TEMPRATURE_MAX": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "TEMPRATURE_MIN": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "UV_MAX": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "UV_MIN": {
+            "describes": "NULL",
+            "type": "string"
+        },
+        "location_name": {
+            "describes": "Landmark location name where the climo is kept",
+            "type": "string"
+        },
+        "timezoneoffset": {
+            "describes": "Timezone offset",
+            "maximum": 330.0,
+            "minimum": 0.0,
+            "type": "number",
+            "units": "Minutes"
+        }
+    },
+    "required": [
+        "DeviceId"
+    ]
+}
