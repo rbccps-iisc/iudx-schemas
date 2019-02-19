@@ -16,6 +16,10 @@
             "describes": "Name of the device",
             "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
         },
+        "deviceModelInfo": {
+            "describes": "Information about the air quality monitoring device",
+            "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+        },
         "DeviceId": {
             "describes": "Device ID's as per the device data model",
             "type": "string"
