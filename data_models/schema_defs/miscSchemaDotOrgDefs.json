@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "describes": "Base schema of catalog entries",
+  "type": "object",
+  "definitions": {
+     "nameSchema": {
+        "@context": "https://schema.org/name",
+        "type": "string",
+        "describes": "Name of the thing"
+     },
+     "urlSchema": {
+        "@context": "https://schema.org/url",
+        "type": "string",
+        "format": "uri",
+        "describes": "URL of the thing"
+     },
+     "alternateNameSchema": {
+        "@context": "https://schema.org/alternateName",
+        "type": "string",
+        "describes": "Alternate name for the thing"
+     },
+     "productSchema": {
+        "@context": "https://schema.org/Product",
+        "brand": {
+          "type": "object",
+          "describes": "Brand name/Organisation",
+          "properties": {
+              "name": { 
+                 "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
+              },
+              "url": {
+                 "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
+              }
+          }
+        },
+        "model": {
+           "type": "string",
+           "describes": "Textual representation of the model of the product."
+        },
+        "mpn": {
+           "type": "string",
+           "describes": "The Manufacturer Part Number (MPN) of the product."
+        },
+        "productID": {
+           "type": "string",
+           "describes": "Product identifier, such as ISBN number."
+        },
+        "releaseDate": {
+           "type": "string",
+           "format": "date-time",
+           "describes": "The release date of a product. Can be used to identify the exact variant of a product."
+        },
+        "url": {
+           "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema",
+           "describes": "Product home page."
+        }
+     }
+  }
+}

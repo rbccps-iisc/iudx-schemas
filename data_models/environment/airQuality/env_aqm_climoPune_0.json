@@ -14,7 +14,7 @@
         },
         "name": {
             "describes": "Name of the device",
-            "$ref": "$project_root/data_models/schema_defs/thingDefs.json#/definitions/nameSchema"
+            "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
         },
         "DeviceId": {
             "describes": "Device ID's as per the device data model",
@@ -29,8 +29,9 @@
             "$ref": "$project_root/data_models/schema_defs/locationDefs.json#/definitions/longitude"
         },
         "AIR_PRESSURE": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Measured Air pressure",
+            "type": "string",
+            "units": "bar"
         },
         "AQI": {
             "describes": "Overall AQI ",
