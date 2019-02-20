@@ -2,98 +2,98 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "allOf": [
         {
-            "$ref": "iudx_data_item_schema.json#"
+            "$ref": "base_schemas/iudx_data_item_schema.json#"
         }
     ],
     "describes": "$describes",
     "name": "StreetLightingSreePanel",
     "properties": {
         "B_PHASE_CURRENT": {
-            "description": "Gives B Phase Current",
+            "describes": "Gives B Phase Current",
             "type": "string",
             "maximum": 100.0,
             "minimum": 0.0,
             "units": "Ampere"
         },
         "B_PHASE_POWER": {
-            "description": "Gives B Phase Power",
+            "describes": "Gives B Phase Power",
             "maximum": 100.0,
             "minimum": 0.0,
             "type": "string",
             "units": "Watts"
         },
         "B_PHASE_VOLTAGE": {
-            "description": "Gives B Phase Voltage",
+            "describes": "Gives B Phase Voltage",
             "type": "string",
             "maximum": 100.0,
             "minimum": 0.0,
             "units": "Volts"
         },
         "LASTUPDATEDATETIME": {
-            "description": "Time at which the lastest change occured",
+            "describes": "Time at which the lastest change occured",
             "type": "string"
         },
         "LIGHT_STATUS": {
-            "description": "Currents status of the lights",
+            "describes": "Currents status of the lights",
             "type": "string"
         },
         "NAME": {
-            "description": "Name of the locality",
+            "describes": "Name of the locality",
             "type": "string"
         },
         "PANEL_ID": {
-            "description": "Uniquie ID assigned to the mounted panel",
+            "describes": "Uniquie ID assigned to the mounted panel",
             "type": "string"
         },
         "PANEL_NAME": {
-            "description": "Name of the Panel Mounted",
+            "describes": "Name of the Panel Mounted",
             "type": "string"
         },
         "R_PHASE_CURRENT": {
-            "description": "Gives R Phase Current",
+            "describes": "Gives R Phase Current",
             "maximum": 100.0,
             "minimum": 0.0,
             "type": "string",
             "units": "Ampere"
         },
         "R_PHASE_POWER": {
-            "description": "Gives R Phase Power",
+            "describes": "Gives R Phase Power",
             "maximum": 100.0,
             "minimum": 0.0,
             "type": "string",
             "units": "Watts"
         },
         "R_PHASE_VOLTAGE": {
-            "description": "Gives R Phase Voltage",
+            "describes": "Gives R Phase Voltage",
             "maximum": 100.0,
             "minimum": 0.0,
             "type": "string",
             "units": "Volts"
         },
         "TOTAL_LIGHTS": {
-            "description": "Indication of the number of Lights at the location",
+            "describes": "Indication of the number of Lights at the location",
             "type": "string"
         },
         "TOTAL_LOAD": {
-            "description": "Total power consumption",
+            "describes": "Total power consumption",
             "type": "string"
         },
         "Y_PHASE_CURRENT": {
-            "description": "Gives Y Phase Current",
+            "describes": "Gives Y Phase Current",
             "maximum": 100.0,
             "minimum": 0.0,
             "type": "string",
             "units": "Ampere"
         },
         "Y_PHASE_POWER": {
-            "description": "Gives Y Phase Power",
+            "describes": "Gives Y Phase Power",
             "maximum": 100.0,
             "minimum": 0.0,
             "type": "string",
             "units": "Watts"
         },
         "Y_PHASE_VOLTAGE": {
-            "description": "Gives Y Phase Voltage",
+            "describes": "Gives Y Phase Voltage",
             "maximum": 100.0,
             "minimum": 0.0,
             "type": "string",

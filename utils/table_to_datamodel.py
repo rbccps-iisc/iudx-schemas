@@ -42,7 +42,7 @@ def make_attribute(name):
     dscr = input("Enter any description of this attribute \t")
     with open(attrTypeString,"r") as f:
         attrDict = json.loads(f.read().replace("$attr",name))
-        attrDict[name]["description"] = dscr
+        attrDict[name]["describes"] = dscr
     if typ == "1":
         pass
     if typ == "2" or typ == "3":
