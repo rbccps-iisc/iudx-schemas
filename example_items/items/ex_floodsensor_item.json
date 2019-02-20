@@ -1,0 +1,29 @@
+{
+  "id": "akdfi74938nid8kjfvko4",
+  "itemDescription": "Flood sensing station",
+  "refDataModel": "data_models/environment/floodSensor/env_flood_climoPune_0.json",
+  "NAME": "Kalash",
+  "provider": {
+    "entityId": "smart-cities-rbccps",
+    "entityIdentityType": "X509",
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://example.iudx-provider.org",
+    "entityContactPhone": "+917234857987"
+  },
+  "tags": ["flooding", "flood"],
+  "location": {
+    "latitude": 18.581797,
+    "longitude": 73.8727111
+  },
+  "__itemStatus": "active",
+  "__itemType": "item",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "accessInformation": [
+     {
+       "resourceServerId": "Kalash",
+       "accessSchemaType": "openAPI",
+       "accessSchema": "Link-to-api-object-in-catalogue"
+     }
+  ],
+  "STATION_ID": "FWR015"
+}

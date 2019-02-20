@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "base_schemas/iudx_data_item_schema.json#"
+        }
+    ],
+    "describes": "Flood Sensor data model for flood sensors deployed in Pune City.",
+    "properties": {
+        "location": {
+           "describes": "Physical location of the sensor", 
+           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+        },
+        "deviceModelInfo": {
+            "describes": "Information about the flood sensing device",
+            "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+        },
+        "STATION_ID": {
+            "describes": "Sensing station ID as per the device data model",
+            "type": "string"
+        },
+        "NAME": {
+            "describes": "Name of the device.",
+            "type": "string"
+        },
+        "LASTUPDATEDATETIME":{
+            "describes": "Time when the last data was received from this device",
+            "type": "string",
+            "format": "date-time"
+        },
+        "SITE_STATUS": {
+            "describes": "Functional status of flood sensing site/station/device",
+            "type": "string",
+            "enum": [ "Active", "Inactive" ]
+        },
+        "STATUS": {
+            "describes": "Flooding Level STATUS",
+            "type": "string",
+            "enum": [ "Danger", "Alert", "Normal"]
+        },
+        "DANGER": {
+            "describes": "Reference Danger Level setting for the given sensing station. If CUR_LEVEL is greater than DANGER then the flooding status is flagged as 'Danger'",
+            "type": "string"
+        },
+        "ALERT": {
+            "describes": "Reference Alert Level setting for the given sensing station. If CUR_LEVEL is greater than ALERT then a flooding 'Alert' is generated",
+            "type": "string"
+        },
+        "CUR_LEVEL": {
+            "describes": "Current flooding level  detected by a given sensing station. Sensing device uses 'REF_LEVEL' and 'M_DISTANCE' parameters to compute CUR_LEVEL",
+            "type": "string"
+        },
+        "REF_LEVEL": {
+            "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
+            "type": "string"
+        },
+        "M_DISTANCE": {
+            "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
+            "type": "string"
+        }
+    },
+    "required": [
+        "STATION_ID", "NAME", "location"
+    ]
+}
