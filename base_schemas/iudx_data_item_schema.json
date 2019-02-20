@@ -31,8 +31,18 @@
                   "describes": "URL that has more information about meta-data of this resource"
                },
                "accessSchema": {
-                   "type": "object",
-                   "describes": "An object (api JSON object, or a json-schema) to describe access mechanism for this data resource. For example, an OpenAPI JSON object can be used to describe APIs for interacting with this resource. "
+                  "oneOf": [
+                   {
+                      "title": "Link to API/JSON-schema object",
+                      "type": "string",
+                      "describes": "Link to an object (api JSON object, or a json-schema) to describe access mechanism for this data resource."
+                   },
+                   { 
+                      "title": "Embedded API/JSON-schema object",
+                      "type": "object",
+                      "describes": "An object (api JSON object, or a json-schema) to describe access mechanism for this data resource. For example, an OpenAPI JSON object can be used to describe APIs for interacting with this resource. "
+                   }
+                  ]
                }
             },
             "required": ["resourceServerId", "accessSchemaType"]
