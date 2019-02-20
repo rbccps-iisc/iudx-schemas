@@ -11,6 +11,8 @@
         "B_PHASE_CURRENT": {
             "description": "Gives B Phase Current",
             "type": "string",
+            "maximum": 100.0,
+            "minimum": 0.0,
             "units": "Ampere"
         },
         "B_PHASE_POWER": {
@@ -23,6 +25,8 @@
         "B_PHASE_VOLTAGE": {
             "description": "Gives B Phase Voltage",
             "type": "string",
+            "maximum": 100.0,
+            "minimum": 0.0,
             "units": "Volts"
         },
         "LASTUPDATEDATETIME": {
@@ -47,17 +51,22 @@
         },
         "R_PHASE_CURRENT": {
             "description": "Gives R Phase Current",
+            "maximum": 100.0,
+            "minimum": 0.0,
             "type": "string",
             "units": "Ampere"
         },
         "R_PHASE_POWER": {
             "description": "Gives R Phase Power",
             "maximum": 100.0,
+            "minimum": 0.0,
             "type": "string",
             "units": "Watts"
         },
         "R_PHASE_VOLTAGE": {
             "description": "Gives R Phase Voltage",
+            "maximum": 100.0,
+            "minimum": 0.0,
             "type": "string",
             "units": "Volts"
         },
@@ -71,16 +80,22 @@
         },
         "Y_PHASE_CURRENT": {
             "description": "Gives Y Phase Current",
+            "maximum": 100.0,
+            "minimum": 0.0,
             "type": "string",
             "units": "Ampere"
         },
         "Y_PHASE_POWER": {
             "description": "Gives Y Phase Power",
+            "maximum": 100.0,
+            "minimum": 0.0,
             "type": "string",
             "units": "Watts"
         },
         "Y_PHASE_VOLTAGE": {
             "description": "Gives Y Phase Voltage",
+            "maximum": 100.0,
+            "minimum": 0.0,
             "type": "string",
             "units": "Volts"
         }
