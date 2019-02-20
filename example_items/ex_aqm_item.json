@@ -1,0 +1,25 @@
+{
+  "id": "8898kwiorit9490494",
+  "itemDescription": "AQM item",
+  "refDataModel": "data_models/environment/airQuality/env_aqm_climoPune_0.json",
+  "provider": {
+    "entityId": "smart-cities-rbccps",
+    "entityIdentityType": "X509",
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://example.iudx-provider.org",
+    "entityContactPhone": "+917234857987"
+  },
+  "tags":["air pollution", "pollution", "air quality", "NO2", "NO", "CO2"],
+  "__itemStatus": "active",
+  "__itemType": "item",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "accessInformation": [
+     {
+       "resourceServerId": "idofaqmdevice",
+       "resourceType": "table",
+       "accessSchemaType": "openAPI",
+       "accessSchema": "Link-to-api-object-in-catalogue"
+     }
+  ],
+  "DeviceId": "idofaqmdevice"
+}

@@ -3,22 +3,22 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "iudx_data_item_schema.json#"
+            "$ref": "base_schemas/iudx_data_item_schema.json#"
         }
     ],
     "describes": "Air Quality data model for AQM sensors deployed in Pune City.",
     "properties": {
         "location": {
            "describes": "Physical location of the AQM sensor", 
-           "$ref": "$project_root/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
         },
         "name": {
             "describes": "Name of the device",
-            "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
+            "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
         },
         "deviceModelInfo": {
             "describes": "Information about the air quality monitoring device",
-            "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+            "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
         },
         "DeviceId": {
             "describes": "Device ID's as per the device data model",
@@ -26,11 +26,11 @@
         },
         "Latitude": {
             "describes": "Latitude of the AQM sensor",
-            "$ref": "$project_root/data_models/schema_defs/locationDefs.json#/definitions/latitude"
+            "$ref": "data_models/schema_defs/locationDefs.json#/definitions/latitude"
         },
         "Longitude": {
             "describes": "Latitude of the AQM sensor",
-            "$ref": "$project_root/data_models/schema_defs/locationDefs.json#/definitions/longitude"
+            "$ref": "data_models/schema_defs/locationDefs.json#/definitions/longitude"
         },
         "AIR_PRESSURE": {
             "describes": "Measured Air pressure",

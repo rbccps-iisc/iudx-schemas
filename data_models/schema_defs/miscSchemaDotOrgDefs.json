@@ -26,10 +26,10 @@
           "describes": "Brand name/Organisation",
           "properties": {
               "name": { 
-                 "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
+                 "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
               },
               "url": {
-                 "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
+                 "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
               }
           }
         },
@@ -51,7 +51,7 @@
            "describes": "The release date of a product. Can be used to identify the exact variant of a product."
         },
         "url": {
-           "$ref": "$project_root/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema",
+           "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema",
            "describes": "Product home page."
         }
      }
