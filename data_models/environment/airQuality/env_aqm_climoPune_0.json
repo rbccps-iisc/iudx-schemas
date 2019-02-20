@@ -229,6 +229,11 @@
         }
     },
     "required": [
+<<<<<<< Updated upstream
         "DEVICEID", "NAME", "location"
+=======
+        "NAME",
+        "DEVICEID"
+>>>>>>> Stashed changes
     ]
 }

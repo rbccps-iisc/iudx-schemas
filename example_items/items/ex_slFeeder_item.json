@@ -1,0 +1,25 @@
+{
+  "id": "8898kwiorit9490696",
+  "itemDescription": "Streetlight Feeder Item",
+  "refDataModel": "data_models/streetlighting/feeder/streetlighting_feeder_shree_0.json",
+  "provider": {
+    "entityId": "smart-cities-rbccps",
+    "entityIdentityType": "X509",
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://example.iudx-provider.org",
+    "entityContactPhone": "+917234857987"
+  },
+  "tags":["streetlighting","streetlight","feeder"],
+  "__itemStatus": "active",
+  "__itemType": "item",
+  "__createdAt": "2019-02-20T17:30:06.093121",
+  "accessInformation": [
+     {
+       "resourceServerId": "idofaqmdevice",
+       "resourceType": "table",
+       "accessSchemaType": "openAPI",
+       "accessSchema": "Link-to-api-object-in-catalogue"
+     }
+  ],
+  "NAME": "NEAR SARSWAT BANK"
+}

@@ -7,8 +7,6 @@
         {"$ref": "iudx_data_item_schema.json#"}
     ],
     "properties": {
-        "dataAttributes":{
-        }
     },
     "required":[]
 }

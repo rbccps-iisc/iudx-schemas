@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "allOf": [
+        {
+            "$ref": "iudx_data_item_schema.json#"
+        }
+    ],
+    "describes": "$describes",
+    "name": "StreetLightingSreePanel",
+    "properties": {
+        "B_PHASE_CURRENT": {
+            "description": "Gives B Phase Current",
+            "type": "string",
+            "units": "Ampere"
+        },
+        "B_PHASE_POWER": {
+            "description": "Gives B Phase Power",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "type": "string",
+            "units": "Watts"
+        },
+        "B_PHASE_VOLTAGE": {
+            "description": "Gives B Phase Voltage",
+            "type": "string",
+            "units": "Volts"
+        },
+        "LASTUPDATEDATETIME": {
+            "description": "Time at which the lastest change occured",
+            "type": "string"
+        },
+        "LIGHT_STATUS": {
+            "description": "Currents status of the lights",
+            "type": "string"
+        },
+        "NAME": {
+            "description": "Name of the locality",
+            "type": "string"
+        },
+        "PANEL_ID": {
+            "description": "Uniquie ID assigned to the mounted panel",
+            "type": "string"
+        },
+        "PANEL_NAME": {
+            "description": "Name of the Panel Mounted",
+            "type": "string"
+        },
+        "R_PHASE_CURRENT": {
+            "description": "Gives R Phase Current",
+            "type": "string",
+            "units": "Ampere"
+        },
+        "R_PHASE_POWER": {
+            "description": "Gives R Phase Power",
+            "maximum": 100.0,
+            "type": "string",
+            "units": "Watts"
+        },
+        "R_PHASE_VOLTAGE": {
+            "description": "Gives R Phase Voltage",
+            "type": "string",
+            "units": "Volts"
+        },
+        "TOTAL_LIGHTS": {
+            "description": "Indication of the number of Lights at the location",
+            "type": "string"
+        },
+        "TOTAL_LOAD": {
+            "description": "Total power consumption",
+            "type": "string"
+        },
+        "Y_PHASE_CURRENT": {
+            "description": "Gives Y Phase Current",
+            "type": "string",
+            "units": "Ampere"
+        },
+        "Y_PHASE_POWER": {
+            "description": "Gives Y Phase Power",
+            "type": "string",
+            "units": "Watts"
+        },
+        "Y_PHASE_VOLTAGE": {
+            "description": "Gives Y Phase Voltage",
+            "type": "string",
+            "units": "Volts"
+        }
+    },
+    "required": [
+        "NAME"
+    ]
+}

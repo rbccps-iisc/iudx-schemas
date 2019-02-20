@@ -65,12 +65,8 @@ def ask(column):
     attr = {}
     print("\n\n---------------- \n\n")
     print("Attribute Name = \t" + column)
-    passive = input("Is this attribute a passive description ? (y/n) \n")
     attr = make_attribute(column)
-    if passive == 'y' :
-        template["properties"].update(attr)
-    elif passive == 'n':
-        template["properties"]["dataAttributes"].update(attr)
+    template["properties"].update(attr)
 
 
 nm = input("Enter the name of this data model \t")
