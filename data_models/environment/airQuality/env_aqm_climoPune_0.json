@@ -32,17 +32,17 @@
         "AIR_PRESSURE": {
             "describes": "Measured Air pressure",
             "type": "string",
-            "units": "bar"
+            "units": "atm"
         },
         "AQI": {
             "describes": "Overall AQI ",
             "maximum": 1000.0,
             "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "type": "number",
+            "units": "dimensionless"
         },
         "AQI_POLLUTANT": {
-            "describes": "Dominant pollutant in this region",
+            "describes": "Major pollutant in the AQI index.",
             "enum": [
                 "CO",
                 "SO2",
@@ -54,160 +54,181 @@
             ],
             "type": "string"
         },
+        "SOUND": {
+          "description": "Instantaneous Noise level",
+          "type": "number",
+          "units" : "dB"
+        },
         "CO2_MAX": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Maximum value of CO2 for the last 24 hours",
+            "type": "number",
+            "maximum": 5000,
+            "minimum": 0,
+            "units": "ppm"
         },
         "CO2_MIN": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Minimum value of CO2 for the last 24 hours",
+            "type": "number",
+            "maximum": 5000,
+            "minimum": 0,
+            "units": "ppm"
         },
         "CO_MAX": {
-            "describes": "NUL",
-            "type": "string"
+            "describes": "Maximum value of CO for the last 24 hours",
+            "type": "number",
+            "units": "ppm"
         },
         "CO_MIN": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Minimum value of CO for the last 24 hours",
+            "type": "number",
+            "units": "ppm"
         },
         "CATEGORY": {
             "describes": "Quality indication",
             "enum": [
-                "Good",
-                "Moderate",
-                "Poor",
-                "nullvalue"
+                "GOOD",
+                "MODERATE",
+                "UNHEALTHY",
+                "VERY UNHEALTHY",
+                "HAZARDOUS",
+                "POOR"
             ],
             "type": "string"
         },
         "HUMIDITY": {
             "describes": "Relative humidity",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
-            "units": "RH"
+            "maximum": 100,
+            "minimum": 0,
+            "type": "number",
+            "units": "percentage"
         },
         "LIGHT": {
             "describes": "Light in lux",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
+            "maximum": 188000,
+            "minimum": 0,
+            "type": "number",
             "units": "lux"
         },
         "NO2_MAX": {
-            "describes": "Maximum NO2 Concentration",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "describes": "Maximum value of NO2 for the last 24 hours",
+            "maximum": 300,
+            "minimum": 0,
+            "type": "number",
+            "units": "ppb"
         },
         "NO2_MIN": {
-            "describes": "Minimum NO2 Concentration",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "describes": "Minimum value of NO2 for the last 24 hours",
+            "maximum": 300,
+            "minimum": 0,
+            "type": "number",
+            "units": "ppb"
         },
         "NO_MAX": {
-            "describes": "Maximum NO concentration",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "describes": "Maximum value of NO for the last 24 hours",
+            "type": "number",
+            "maximum": 300,
+            "minimum": 0,
+            "units": "ppb"
         },
         "NO_MIN": {
-            "describes": "Minimum NO concentration",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
-        },
-        "ON_OFF_STATUS": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Minimum value of NO for the last 24 hours",
+            "type": "number",
+            "maximum": 300,
+            "minimum": 0,
+            "units": "ppb"
         },
         "OZONE_MAX": {
-            "describes": "Maximum O3 concentration",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "describes": "Maximum value of Ozone for the last 24 hours",
+            "type": "number",
+            "maximum": 400,
+            "minimum": 0,
+            "units": "ppb"
         },
         "OZONE_MIN": {
-            "describes": "Minimum O3 concentration",
-            "maximum": 1000.0,
-            "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "describes": "Minimum value of Ozone for the last 24 hours",
+            "type": "number",
+            "maximum": 400,
+            "minimum": 0,
+            "units": "ppb"
         },
         "PM10_MAX": {
-            "describes": "Maximum PM10 concentration",
+            "describes": "Maximum value of PM10 for the last 24 hours",
+            "type": "number",
             "maximum": 1000.0,
             "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "units": "ug/m3"
         },
         "PM10_MIN": {
-            "describes": "Minimum PM10 concentration",
+            "describes": "Minimum value of PM10 for the last 24 hours",
+            "type": "number",
             "maximum": 1000.0,
             "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "units": "ug/m3"
         },
         "PM2_MAX": {
-            "describes": "Maximum PM2.5 Concentration",
-            "maximum": 1000.0,
+            "describes": "Maximum value of PM2.5 for the last 24 hours",
+            "type": "number",
+            "maximum": 500.0,
             "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "units": "ug/m3"
         },
         "PM2_MIN": {
-            "describes": "Maximum PM2.5 concentration",
-            "maximum": 1000.0,
+            "describes": "Minimum value of PM2.5 for the last 24 hours",
+            "type": "number",
+            "maximum": 500.0,
             "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "units": "ug/m3"
         },
         "SO2_MAX": {
-            "describes": "Maximum SO2 concentration",
-            "maximum": 1000.0,
+            "describes": "Maximum value of SO2 for the last 24 hours",
+            "type": "number",
+            "maximum": 700.0,
             "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "units": "ppb"
         },
         "SO2_MIN": {
-            "describes": "Minimum SO2 concentration",
-            "maximum": 1000.0,
+            "describes": "Minimum value of SO2 for the last 24 hours",
+            "type": "number",
+            "maximum": 700.0,
             "minimum": 0.0,
-            "type": "integer",
-            "units": "NULL"
+            "units": "ppb"
         },
         "STATUS": {
             "describes": "Indiates if the resource is on or off",
-            "enum": [
-                "On",
-                "Off"
-            ],
-            "type": "string"
+            "type": "string",
+            "enum": [ "ON", "OFF" ]
         },
         "TEMPRATURE_MAX": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Maximum value of Temperature for the last 24 hours",
+            "type": "number",
+            "maximum": 70,
+            "minimum": -40,
+            "units": "degreeCelsius"
         },
         "TEMPRATURE_MIN": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Minimum value of Temperature for the last 24 hours",
+            "type": "number",
+            "maximum": 70,
+            "minimum": -40,
+            "units": "degreeCelsius"
         },
         "UV_MAX": {
+            "describes": "Maximum value of UV for the last 24 hours",
             "describes": "NULL",
-            "type": "string"
+            "type": "number",
+            "maximum": 15,
+            "minimum": 0,
+            "units": "UVI"
         },
         "UV_MIN": {
-            "describes": "NULL",
-            "type": "string"
+            "describes": "Minimum value of UV for the last 24 hours",
+            "type": "number",
+            "maximum": 15,
+            "minimum": 0,
+            "units": "UVI"
         }
     },
     "required": [
-        "DEVICEID"
+        "DEVICEID", "NAME", "location"
     ]
 }
