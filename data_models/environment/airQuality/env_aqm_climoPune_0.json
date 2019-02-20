@@ -12,25 +12,22 @@
            "describes": "Physical location of the AQM sensor", 
            "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
         },
-        "name": {
-            "describes": "Name of the device",
-            "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/nameSchema"
-        },
         "deviceModelInfo": {
             "describes": "Information about the air quality monitoring device",
             "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
         },
-        "DeviceId": {
+        "DEVICEID": {
             "describes": "Device ID's as per the device data model",
             "type": "string"
         },
-        "Latitude": {
-            "describes": "Latitude of the AQM sensor",
-            "$ref": "data_models/schema_defs/locationDefs.json#/definitions/latitude"
+        "NAME": {
+            "describes": "Name of the device.",
+            "type": "string"
         },
-        "Longitude": {
-            "describes": "Latitude of the AQM sensor",
-            "$ref": "data_models/schema_defs/locationDefs.json#/definitions/longitude"
+        "LASTUPDATEDATETIME":{
+            "describes": "Time when the last data was received from this device",
+            "type": "string",
+            "format": "date-time"
         },
         "AIR_PRESSURE": {
             "describes": "Measured Air pressure",
@@ -44,7 +41,7 @@
             "type": "integer",
             "units": "NULL"
         },
-        "AQI_Pollutant": {
+        "AQI_POLLUTANT": {
             "describes": "Dominant pollutant in this region",
             "enum": [
                 "CO",
@@ -53,7 +50,7 @@
                 "NO2",
                 "PM_10",
                 "PM2_5",
-                "Ozone"
+                "OZONE"
             ],
             "type": "string"
         },
@@ -73,7 +70,7 @@
             "describes": "NULL",
             "type": "string"
         },
-        "Category": {
+        "CATEGORY": {
             "describes": "Quality indication",
             "enum": [
                 "Good",
@@ -83,14 +80,14 @@
             ],
             "type": "string"
         },
-        "Humidity": {
+        "HUMIDITY": {
             "describes": "Relative humidity",
             "maximum": 1000.0,
             "minimum": 0.0,
             "type": "integer",
             "units": "RH"
         },
-        "Light": {
+        "LIGHT": {
             "describes": "Light in lux",
             "maximum": 1000.0,
             "minimum": 0.0,
@@ -185,7 +182,7 @@
             "type": "integer",
             "units": "NULL"
         },
-        "Status": {
+        "STATUS": {
             "describes": "Indiates if the resource is on or off",
             "enum": [
                 "On",
@@ -208,20 +205,9 @@
         "UV_MIN": {
             "describes": "NULL",
             "type": "string"
-        },
-        "location_name": {
-            "describes": "Landmark location name where the climo is kept",
-            "type": "string"
-        },
-        "timezoneoffset": {
-            "describes": "Timezone offset",
-            "maximum": 330.0,
-            "minimum": 0.0,
-            "type": "number",
-            "units": "Minutes"
         }
     },
     "required": [
-        "DeviceId"
+        "DEVICEID"
     ]
 }

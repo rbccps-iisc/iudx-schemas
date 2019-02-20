@@ -21,5 +21,5 @@
        "accessSchema": "Link-to-api-object-in-catalogue"
      }
   ],
-  "DeviceId": "idofaqmdevice"
+  "DEVICEID": "idofaqmdevice"
 }
