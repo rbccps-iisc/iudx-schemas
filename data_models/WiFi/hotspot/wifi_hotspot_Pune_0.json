@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "base_schemas/iudx_data_item_schema.json#"
+        }
+    ],
+    "describes": "Data model for WiFi Hotspots installed in Pune City",
+    "properties": {
+        "location": {
+           "describes": "Hotspot location", 
+           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+        },
+        "HOTSPOT_ID": {
+            "describes": "Hotspot ID as per the device data model",
+            "type": "string"
+        },
+        "NAME": {
+            "describes": "Name of the device.",
+            "type": "string"
+        },
+        "LASTUPDATEDATETIME":{
+            "describes": "Time when the last data was received from this device",
+            "type": "string",
+            "format": "date-time"
+        },
+        "DOWNLOAD_RATE": {
+            "describes": "Aggregate Download Rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
+            "type": "string",
+            "units": "kbps"
+        },
+        "ACCESS_POINT_COUNT": {
+            "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string.",
+            "type": "string"
+        },
+        "LOCATION_STATUS": {
+            "describes": "Hotspot functional or not",
+            "type": "string",
+            "enum": [ "ON", "OFF" ]
+        },
+        "UPLOAD_RATE": {
+            "describes": " Aggregate upload rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
+            "type": "string",
+            "units": "kbps"
+        },
+        "USER_COUNT": {
+            "describes": "Number of users connected to the hotspot. It is an integer encoded as a string.",
+            "type": "string"
+        },
+        "ACCESS_POINTS": {
+            "describes": " ",
+            "type": "string"
+        },
+        "LOCATION_TYPE": {
+            "describes": " ",
+            "type": "string"
+        }
+        
+    },
+    "required": [
+        "STATION_ID", "NAME", "location"
+    ]
+}
