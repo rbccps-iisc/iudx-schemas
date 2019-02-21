@@ -5,8 +5,24 @@
         "description": "Describes Environment sensor API's",
         "version": "1.0.0"
     },
+    "servers": [
+        {
+            "url": "https://{ip}:{port}/api/1.0.0/",
+            "description": "API server URL",
+            "variables": {
+                "ip": {
+                    "default": "localhost",
+                    "description": "For local testing"
+                },
+                "port": {
+                    "default": "8080",
+                    "description": "For local testing"
+                }
+            }
+        }
+    ],
     "paths": {
-        "/api/1.0.0/latest/aqm-bosch-climo/{NAME}": {
+        "/latest/aqm-bosch-climo/{NAME}": {
             "get": {
                 "responses": {
                     "200": {
@@ -25,6 +41,25 @@
                 {
                     "name": "NAME",
                     "in": "path",
+                    "description": "NAME of the location where climo is at",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "id",
+                    "in": "header",
+                    "description": "Id of the user",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "apikey",
+                    "in": "header",
+                    "description": "Api key of the user",
                     "required": true,
                     "schema": {
                         "type": "string"

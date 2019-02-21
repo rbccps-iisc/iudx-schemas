@@ -1,115 +1,230 @@
 {
-	"openapi": "3.0.1",
-	"info": {
-		"title": "StreetLightingSreePanel",
-		"description": "The data model for Shree Streelighting feeder station",
-		"version": "1.0.0"
-	},
-	"servers": [
-		{
-			"url": "https://192.168.1.158:8080/api/1.0.0",
-			"description": "Resource server"
-		}
-	],
-	"paths": {
-		"/resource/latest/streetlight-feeder-sree/{NAME}/": {
-			"get": {
-				"description": "Get feeder station data",
-				"parameters": [
-					{
-						"name": "NAME",
-						"in": "path",
-						"description": "Name of the nearest streetlight feeder station",
-						"required": true,
-						"schema": {
-							"type": "string"
-						}
-					}
-				],
-				"responses": {
-					"200": {
-						"description": "OK",
-						"content": {
-							"application/json": {
-								"schema": {
-									"$ref": "#/components/schemas/SensorPacket"
-								}
-							}
-						}
-					}
-				}
-			},
-			"parameters": [
-				{
-					"name": "NAME",
-					"in": "path",
-					"description": "Feeder location name",
-					"required": true,
-					"schema": {
-						"type": "string"
-					}
-				}
-			]
-		}
-	},
-	"components": {
-		"schemas": {
-			"SensorPacket": {
-				"title": "Root Type for SensorPacket",
-				"description": "Sensor response from the api as json object",
-				"type": "object",
-				"properties": {
-					"B_PHASE_POWER": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_POWER"
-					},
-					"R_PHASE_POWER": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_POWER"
-					},
-					"Y_PHASE_VOLTAGE": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_VOLTAGE"
-					},
-					"PANEL_NAME": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_NAME"
-					},
-					"Y_PHASE_POWER": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_POWER"
-					},
-					"PANEL_ID": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_ID"
-					},
-					"TOTAL_LIGHTS": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LIGHTS"
-					},
-					"NAME": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/NAME"
-					},
-					"R_PHASE_CURRENT": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_CURRENT"
-					},
-					"R_PHASE_VOLTAGE": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_VOLTAGE"
-					},
-					"LASTUPDATEDATETIME": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LASTUPDATEDATETIME"
-					},
-					"Y_PHASE_CURRENT": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_CURRENT"
-					},
-					"B_PHASE_CURRENT": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_CURRENT"
-					},
-					"B_PHASE_VOLTAGE": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_VOLTAGE"
-					},
-					"TOTAL_LOAD": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LOAD"
-					},
-					"LIGHT_STATUS": {
-						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LIGHT_STATUS"
-					}
-				},
-				"example": "{\n    \"B_PHASE_POWER\": \"0.0\",\n    \"R_PHASE_POWER\": \"0.0\",\n    \"Y_PHASE_VOLTAGE\": \"237.1\",\n    \"PANEL_NAME\": \"KN-13\",\n    \"Y_PHASE_POWER\": \"0.0\",\n    \"PANEL_ID\": \"18419\",\n    \"TOTAL_LIGHTS\": \"0\",\n    \"NAME\": \"NEAR SARSWAT BANK\",\n    \"R_PHASE_CURRENT\": \"0.0\",\n    \"R_PHASE_VOLTAGE\": \"235.1\",\n    \"LASTUPDATEDATETIME\": \"2019-01-22T12:32:41.967+05:30\",\n    \"Y_PHASE_CURRENT\": \"0.0\",\n    \"B_PHASE_CURRENT\": \"0.0\",\n    \"B_PHASE_VOLTAGE\": \"239.8\",\n    \"TOTAL_LOAD\": \"0\",\n    \"LIGHT_STATUS\": \"Off\"\n}"
-			}
-		}
-	}
+    "openapi": "3.0.1",
+    "info": {
+        "title": "StreetLightingSreePanel",
+        "description": "The data model for Shree Streelighting feeder station",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://{serverIP}:{serverPort}/api/1.0.0/resource",
+            "description": "",
+            "variables": {
+                "serverIP": {
+                    "default": "localhost"
+                },
+                "serverPort": {
+                    "default": "8080"
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/latest/streetlight-feeder-sree/{NAME}/": {
+            "get": {
+                "description": "Get feeder station data",
+                "parameters": [
+                    {
+                        "name": "NAME",
+                        "in": "path",
+                        "description": "Name of the nearest streetlight feeder station",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SensorPacket"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "name": "NAME",
+                    "in": "path",
+                    "description": "Feeder location name",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "id",
+                    "in": "header",
+                    "description": "User ID",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "apikey",
+                    "in": "header",
+                    "description": "API key for that user",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "/query/streetlight-feeder-sree/{NAME}/{startTime}/{endTime}/": {
+            "get": {
+                "description": "Get feeder station data",
+                "parameters": [
+                    {
+                        "name": "NAME",
+                        "in": "path",
+                        "description": "Name of the nearest streetlight feeder station",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "startTime",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "endTime",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SensorPacketArray"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "name": "NAME",
+                    "in": "path",
+                    "description": "Feeder location name",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "id",
+                    "in": "header",
+                    "description": "User ID",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "apikey",
+                    "in": "header",
+                    "description": "API key for that user",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    },
+    "components": {
+        "schemas": {
+            "SensorPacket": {
+                "title": "Root Type for SensorPacket",
+                "description": "Sensor response from the api as json object",
+                "type": "object",
+                "properties": {
+                    "B_PHASE_POWER": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_POWER"
+                    },
+                    "R_PHASE_POWER": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_POWER"
+                    },
+                    "Y_PHASE_VOLTAGE": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_VOLTAGE"
+                    },
+                    "PANEL_NAME": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_NAME"
+                    },
+                    "Y_PHASE_POWER": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_POWER"
+                    },
+                    "PANEL_ID": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_ID"
+                    },
+                    "TOTAL_LIGHTS": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LIGHTS"
+                    },
+                    "NAME": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/NAME"
+                    },
+                    "R_PHASE_CURRENT": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_CURRENT"
+                    },
+                    "R_PHASE_VOLTAGE": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_VOLTAGE"
+                    },
+                    "LASTUPDATEDATETIME": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LASTUPDATEDATETIME"
+                    },
+                    "Y_PHASE_CURRENT": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_CURRENT"
+                    },
+                    "B_PHASE_CURRENT": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_CURRENT"
+                    },
+                    "B_PHASE_VOLTAGE": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_VOLTAGE"
+                    },
+                    "TOTAL_LOAD": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LOAD"
+                    },
+                    "LIGHT_STATUS": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LIGHT_STATUS"
+                    }
+                },
+                "example": "{\n    \"B_PHASE_POWER\": \"0.0\",\n    \"R_PHASE_POWER\": \"0.0\",\n    \"Y_PHASE_VOLTAGE\": \"237.1\",\n    \"PANEL_NAME\": \"KN-13\",\n    \"Y_PHASE_POWER\": \"0.0\",\n    \"PANEL_ID\": \"18419\",\n    \"TOTAL_LIGHTS\": \"0\",\n    \"NAME\": \"NEAR SARSWAT BANK\",\n    \"R_PHASE_CURRENT\": \"0.0\",\n    \"R_PHASE_VOLTAGE\": \"235.1\",\n    \"LASTUPDATEDATETIME\": \"2019-01-22T12:32:41.967+05:30\",\n    \"Y_PHASE_CURRENT\": \"0.0\",\n    \"B_PHASE_CURRENT\": \"0.0\",\n    \"B_PHASE_VOLTAGE\": \"239.8\",\n    \"TOTAL_LOAD\": \"0\",\n    \"LIGHT_STATUS\": \"Off\"\n}"
+            },
+            "SensorPacketArray": {
+                "description": "Array of sensor packet messages",
+                "required": [
+                    "array"
+                ],
+                "type": "object",
+                "properties": {
+                    "array": {
+                        "description": "Packet Array",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/SensorPacket"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
