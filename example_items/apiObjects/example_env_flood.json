@@ -1,0 +1,89 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+	"title": "FloodSensor",
+	"description": "Flood Sensor data model for flood sensors deployed in Pune City",
+	"version": "1.0.0"
+    },
+    "servers": [
+	{
+	    "description": "SwaggerHub API Auto Mocking",
+	    "url": "https://virtserver.swaggerhub.com/mukunth/FloodSensor/1.0.0"
+	},
+	{
+	    "url": "https://192.168.1.158:8080/api/1.0.0",
+	    "description": "Resource server"
+	}
+    ],
+    "paths": {
+	"/resource/latest/flood-sensor/{NAME}": {
+	    "get": {
+		"parameters": [
+		    {
+			"name": "NAME",
+			"in": "path",
+			"description": "Name of the station at which the flood sensor is deployed",
+			"required": true,
+			"schema": {
+			    "type": "string"
+			}
+		    }
+		],
+		"responses": {
+		    "200": {
+			"description": "OK",
+			"content": {
+			    "application/json": {
+				"schema": {
+				    "$ref": "#/components/schemas/SensorPacket"
+				}
+			    }
+			}
+		    }
+		}
+	    }
+	}
+    },
+    "components": {
+	"schemas": {
+	    "SensorPacket": {
+		"title": "Root Type for SensorPacket",
+		"description": "Sensor response from the api as json object",
+		"type": "object",
+		"properties": {
+		    "DANGER": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/DANGER"
+		    },
+		    "CUR_LEVEL": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/CUR_LEVEL"
+		    },
+		    "STATUS": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/STATUS"
+		    },
+		    "M_DISTANCE": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/M_DISTANCE"
+		    },
+		    "REF_LEVEL": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/REF_LEVEL"
+		    },
+		    "LASTUPDATEDATETIME": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/LASTUPDATEDATETIME"
+		    },
+		    "SITE_STATUS": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/SITE_STATUS"
+		    },
+		    "ALERT": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/ALERT"
+		    },
+		    "STATION_ID": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/STATION_ID"
+		    },
+		    "NAME": {
+			"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/NAME"
+		    }
+		},
+		"example": "{\n    \"DANGER\": \"2.0\",\n    \"CUR_LEVEL\": \"0.37\",\n    \"STATUS\": \"Normal\",\n    \"M_DISTANCE\": \"4.63\",\n    \"REF_LEVEL\": \"5.0\",\n    \"LASTUPDATEDATETIME\": \"2019-02-20T14:48:49.136+05:30\",\n    \"SITE_STATUS\": \"Active\",\n    \"ALERT\": \"1.0\",\n    \"STATION_ID\": \"FWR015\",\n    \"NAME\": \"Kalash\"\n}"
+	    }
+	}
+    }
+}
