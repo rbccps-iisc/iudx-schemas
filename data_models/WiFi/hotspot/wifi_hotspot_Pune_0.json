@@ -47,14 +47,6 @@
         "USER_COUNT": {
             "describes": "Number of users connected to the hotspot. It is an integer encoded as a string.",
             "type": "string"
-        },
-        "ACCESS_POINTS": {
-            "describes": " ",
-            "type": "string"
-        },
-        "LOCATION_TYPE": {
-            "describes": " ",
-            "type": "string"
         }
     },
     "required": [
