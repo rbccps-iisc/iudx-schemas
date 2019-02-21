@@ -7,7 +7,7 @@
     },
     "servers": [
         {
-            "url": "http://{serverIP}:{serverPort}/api/1.0.0/resource",
+            "url": "https://{serverIP}:{serverPort}/api/1.0.0/resource",
             "description": "",
             "variables": {
                 "serverIP": {
