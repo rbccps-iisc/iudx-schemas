@@ -1,176 +1,255 @@
 {
-    "openapi": "3.0.1",
-    "info": {
-        "title": "envSensor",
-        "description": "Describes Environment sensor API's",
-        "version": "1.0.0"
-    },
-    "servers": [
-        {
-            "url": "https://{ip}:{port}/api/1.0.0/",
-            "description": "API server URL",
-            "variables": {
-                "ip": {
-                    "default": "localhost",
-                    "description": "For local testing"
-                },
-                "port": {
-                    "default": "8080",
-                    "description": "For local testing"
-                }
-            }
-        }
-    ],
-    "paths": {
-        "/latest/aqm-bosch-climo/{NAME}": {
-            "get": {
-                "responses": {
-                    "200": {
-                        "description": "Sensor Message as JSON",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/SensorPacket"
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "parameters": [
-                {
-                    "name": "NAME",
-                    "in": "path",
-                    "description": "NAME of the location where climo is at",
-                    "required": true,
-                    "schema": {
-                        "type": "string"
-                    }
-                },
-                {
-                    "name": "id",
-                    "in": "header",
-                    "description": "Id of the user",
-                    "required": true,
-                    "schema": {
-                        "type": "string"
-                    }
-                },
-                {
-                    "name": "apikey",
-                    "in": "header",
-                    "description": "Api key of the user",
-                    "required": true,
-                    "schema": {
-                        "type": "string"
-                    }
-                }
-            ]
-        }
-    },
-    "components": {
-        "schemas": {
-            "SensorPacket": {
-                "title": "Root Type for SensorPaket",
-                "description": "JSON Packet response of the API",
-                "type": "object",
-                "properties": {
-                    "NAME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NAME"
-                    },
-                    "DEVICEID": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/DEVICEID"
-                    },
-                    "LASTUPDATEDATETIME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LASTUPDATEDATETIME"
-                    },
-                    "STATUS": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/STATUS"
-                    },
-                    "AQI": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI"
-                    },
-                    "AQI_POLLUTANT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI_POLLUTANT"
-                    },
-                    "CATEGORY": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CATEGORY"
-                    },
-                    "AIR_PRESSURE": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AIR_PRESSURE"
-                    },
-                    "HUMIDITY": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/HUMIDITY"
-                    },
-                    "SOUND": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SOUND"
-                    },
-                    "LIGHT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LIGHT"
-                    },
-                    "PM10_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MIN"
-                    },
-                    "PM10_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MAX"
-                    },
-                    "CO2_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MIN"
-                    },
-                    "CO2_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MAX"
-                    },
-                    "CO_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MIN"
-                    },
-                    "CO_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MAX"
-                    },
-                    "OZONE_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MAX"
-                    },
-                    "OZONE_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MIN"
-                    },
-                    "UV_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MAX"
-                    },
-                    "NO_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MAX"
-                    },
-                    "NO_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MIN"
-                    },
-                    "PM2_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MIN"
-                    },
-                    "PM2_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MAX"
-                    },
-                    "UV_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MIN"
-                    },
-                    "TEMPRATURE_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MAX"
-                    },
-                    "TEMPRATURE_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MIN"
-                    },
-                    "NO2_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MIN"
-                    },
-                    "NO2_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MAX"
-                    },
-                    "SO2_MIN": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MIN"
-                    },
-                    "SO2_MAX": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MAX"
-                    }
-                },
-                "example": "{\n    \"NAME\": \"Appa_Balwant_Square_30\",\n    \"DEVICEID\": \"169af06f-bfee-3513-56e5-b9ddd7b863f0-sensoragent\",\n    \"LASTUPDATEDATETIME\": \"2019-02-20T12:30:59.320+05:30\",\n    \"STATUS\": \"ON\",\n    \"AQI\": \"207.99\",\n    \"AQI_POLLUTANT\": \"NO2\",\n    \"CATEGORY\": \"POOR\",\n    \"AIR_PRESSURE\": \"0.94\",\n    \"HUMIDITY\": \"23.104\",\n    \"SOUND\": \"84.442\",\n    \"LIGHT\": \"4005.595\",\n    \"PM10_MIN\": \"33.0\",\n    \"PM10_MAX\": \"33.0\",\n    \"CO2_MIN\": \"52.0\",\n    \"CO2_MAX\": \"177.0\",\n    \"CO_MIN\": \"0.0\",\n    \"CO_MAX\": \"0.0\",\n    \"OZONE_MAX\": \"0.0\",\n    \"OZONE_MIN\": \"0.0\",\n    \"UV_MAX\": \"2.0\",\n    \"NO_MAX\": \"0.0\",\n    \"NO_MIN\": \"0.0\",\n    \"PM2_MIN\": \"24.0\",\n    \"PM2_MAX\": \"24.0\",\n    \"UV_MIN\": \"0.1\",\n    \"TEMPRATURE_MAX\": \"38.0\",\n    \"TEMPRATURE_MIN\": \"21.0\",\n    \"NO2_MIN\": \"192.0\",\n    \"NO2_MAX\": \"211.0\",\n    \"SO2_MIN\": \"20.0\",\n    \"SO2_MAX\": \"25.0\"\n}"
-            }
-        }
-    }
+	"openapi": "3.0.1",
+	"info": {
+		"title": "envSensor",
+		"description": "Describes Environment sensor API's",
+		"version": "1.0.0"
+	},
+	"servers": [
+		{
+			"url": "https://{serverIP}:{serverPort}/api/1.0.0/resource",
+			"description": "Resource server",
+			"variables": {
+				"serverIP": {
+					"default": "localhost"
+				},
+				"serverPort": {
+					"default": "8080"
+				}
+			}
+		}
+	],
+	"paths": {
+		"/latest/aqm-bosch-climo/{NAME}": {
+			"get": {
+				"description": "Get the sensor message as an array between given time points",
+				"responses": {
+					"200": {
+						"description": "Sensor Message as JSON",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/SensorPacket"
+								}
+							}
+						}
+					}
+				}
+			},
+			"parameters": [
+				{
+					"name": "NAME",
+					"in": "path",
+					"description": "Name of the location where sensor is deployed",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				},
+				{
+					"name": "id",
+					"in": "header",
+					"description": "User id",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				},
+				{
+					"name": "apikey",
+					"in": "header",
+					"description": "API Key",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}
+			]
+		},
+		"/query/aqm-bosch-climo/{NAME}/{startTime}/{endTime}": {
+			"get": {
+				"description": "Get the sensor message as an array between given time points",
+				"responses": {
+					"200": {
+						"description": "Sensor Message as JSON",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/SensorPacketArray"
+								}
+							}
+						}
+					}
+				}
+			},
+			"parameters": [
+				{
+					"name": "NAME",
+					"in": "path",
+					"description": "Name of the location where sensor is deployed",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				},
+				{
+					"name": "id",
+					"in": "header",
+					"description": "User id",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				},
+				{
+					"name": "apikey",
+					"in": "header",
+					"description": "API Key",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				},
+				{
+					"name": "startTime",
+					"in": "path",
+					"description": "start time",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				},
+				{
+					"name": "endTime",
+					"in": "path",
+					"description": "End time",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}
+			]
+		}
+	},
+	"components": {
+		"schemas": {
+			"SensorPacket": {
+				"title": "Root Type for SensorPaket",
+				"description": "JSON Packet response of the API",
+				"type": "object",
+				"properties": {
+					"NAME": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NAME"
+					},
+					"DEVICEID": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/DEVICEID"
+					},
+					"LASTUPDATEDATETIME": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LASTUPDATEDATETIME"
+					},
+					"STATUS": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/STATUS"
+					},
+					"AQI": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI"
+					},
+					"AQI_POLLUTANT": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI_POLLUTANT"
+					},
+					"CATEGORY": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CATEGORY"
+					},
+					"AIR_PRESSURE": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AIR_PRESSURE"
+					},
+					"HUMIDITY": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/HUMIDITY"
+					},
+					"SOUND": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SOUND"
+					},
+					"LIGHT": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LIGHT"
+					},
+					"PM10_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MIN"
+					},
+					"PM10_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MAX"
+					},
+					"CO2_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MIN"
+					},
+					"CO2_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MAX"
+					},
+					"CO_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MIN"
+					},
+					"CO_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MAX"
+					},
+					"OZONE_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MAX"
+					},
+					"OZONE_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MIN"
+					},
+					"UV_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MAX"
+					},
+					"NO_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MAX"
+					},
+					"NO_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MIN"
+					},
+					"PM2_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MIN"
+					},
+					"PM2_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MAX"
+					},
+					"UV_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MIN"
+					},
+					"TEMPRATURE_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MAX"
+					},
+					"TEMPRATURE_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MIN"
+					},
+					"NO2_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MIN"
+					},
+					"NO2_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MAX"
+					},
+					"SO2_MIN": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MIN"
+					},
+					"SO2_MAX": {
+						"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MAX"
+					}
+				},
+				"example": "{\n    \"NAME\": \"Appa_Balwant_Square_30\",\n    \"DEVICEID\": \"169af06f-bfee-3513-56e5-b9ddd7b863f0-sensoragent\",\n    \"LASTUPDATEDATETIME\": \"2019-02-20T12:30:59.320+05:30\",\n    \"STATUS\": \"ON\",\n    \"AQI\": \"207.99\",\n    \"AQI_POLLUTANT\": \"NO2\",\n    \"CATEGORY\": \"POOR\",\n    \"AIR_PRESSURE\": \"0.94\",\n    \"HUMIDITY\": \"23.104\",\n    \"SOUND\": \"84.442\",\n    \"LIGHT\": \"4005.595\",\n    \"PM10_MIN\": \"33.0\",\n    \"PM10_MAX\": \"33.0\",\n    \"CO2_MIN\": \"52.0\",\n    \"CO2_MAX\": \"177.0\",\n    \"CO_MIN\": \"0.0\",\n    \"CO_MAX\": \"0.0\",\n    \"OZONE_MAX\": \"0.0\",\n    \"OZONE_MIN\": \"0.0\",\n    \"UV_MAX\": \"2.0\",\n    \"NO_MAX\": \"0.0\",\n    \"NO_MIN\": \"0.0\",\n    \"PM2_MIN\": \"24.0\",\n    \"PM2_MAX\": \"24.0\",\n    \"UV_MIN\": \"0.1\",\n    \"TEMPRATURE_MAX\": \"38.0\",\n    \"TEMPRATURE_MIN\": \"21.0\",\n    \"NO2_MIN\": \"192.0\",\n    \"NO2_MAX\": \"211.0\",\n    \"SO2_MIN\": \"20.0\",\n    \"SO2_MAX\": \"25.0\"\n}"
+			},
+			"SensorPacketArray": {
+				"description": "Array of sensor messages",
+				"required": [
+					"array"
+				],
+				"type": "object",
+				"properties": {
+					"array": {
+						"description": "Packet array",
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/SensorPacket"
+						}
+					}
+				}
+			}
+		}
+	}
 }
