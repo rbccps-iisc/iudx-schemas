@@ -1,0 +1,30 @@
+{
+  "id": "akdfi74938nid8kjfvko4",
+  "itemDescription": "WiFi HotSpot",
+  "refDataModel": "data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
+  "NAME": "Chhatrapati Sambhaji Raje",
+  "provider": {
+    "entityId": "smart-cities-rbccps",
+    "entityIdentityType": "X509",
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://example.iudx-provider.org",
+    "entityContactPhone": "+917234857987"
+  },
+  "tags": ["wifi", "hotspot", "download", "upload", "user counts"],
+  "location": {
+    "latitude": 18.52019,
+    "longitude": 73.8468899
+  },
+  "__itemStatus": "active",
+  "__itemType": "item",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "accessInformation": [
+     {
+       "resourceServerId": "Chhatrapati Sambhaji Raje",
+       "accessSchemaType": "openAPI",
+       "accessSchema": "Link-to-api-object-in-catalogue"
+     }
+  ],
+  "HOTSPOT_ID": "2"
+
+}
