@@ -214,7 +214,6 @@
         },
         "UV_MAX": {
             "describes": "Maximum value of UV for the last 24 hours",
-            "describes": "NULL",
             "type": "number",
             "maximum": 15,
             "minimum": 0,
