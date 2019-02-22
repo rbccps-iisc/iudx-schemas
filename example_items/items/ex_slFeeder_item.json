@@ -1,7 +1,7 @@
 {
   "id": "u7734jd399834r8696",
   "itemDescription": "Streetlight Feeder Item",
-  "refDataModel": "data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
   "provider": {
     "entityId": "smart-cities-rbccps",
     "entityIdentityType": "X509",
@@ -22,7 +22,7 @@
      {
        "resourceServerId": "NEAR SARSWAT BANK",
        "accessSchemaType": "openAPI",
-       "accessSchema": "Link-to-api-object-in-catalogue"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_power_feeder.json"
      }
   ]
 }

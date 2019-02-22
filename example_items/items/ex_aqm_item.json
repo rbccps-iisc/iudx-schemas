@@ -1,7 +1,7 @@
 {
   "id": "8898kwiorit9490494",
   "itemDescription": "AQM item",
-  "refDataModel": "data_models/environment/airQuality/env_aqm_climoPune_0.json",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
   "NAME": "A_Bt_Square_30",
   "provider": {
     "entityId": "smart-cities-rbccps",
@@ -24,7 +24,7 @@
        "resourceServerId": "A_Bt_Square_30",
        "resourceType": "table",
        "accessSchemaType": "openAPI",
-       "accessSchema": "Link-to-api-object-in-catalogue"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json"
      }
   ],
   "DEVICEID": "169af06f-bfee-3513-56e5-847957490-sensoragent"

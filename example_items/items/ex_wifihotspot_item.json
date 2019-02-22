@@ -1,7 +1,7 @@
 {
   "id": "akdfi74938nid8kjfvko4",
   "itemDescription": "WiFi HotSpot",
-  "refDataModel": "data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
   "NAME": "Chhatrapati Sambhaji Raje",
   "provider": {
     "entityId": "smart-cities-rbccps",
@@ -22,7 +22,7 @@
      {
        "resourceServerId": "Chhatrapati Sambhaji Raje",
        "accessSchemaType": "openAPI",
-       "accessSchema": "Link-to-api-object-in-catalogue"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_wifi.json"
      }
   ],
   "HOTSPOT_ID": "2"
