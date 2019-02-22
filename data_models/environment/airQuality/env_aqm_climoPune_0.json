@@ -10,7 +10,7 @@
     "properties": {
         "location": {
            "describes": "Physical location of the AQM sensor", 
-           "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
         },
         "deviceModelInfo": {
             "describes": "Information about the air quality monitoring device",

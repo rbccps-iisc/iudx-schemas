@@ -25,7 +25,7 @@
         },
         "LOCATION": {
            "describes": "Current location of the vehicle in geopoint format", 
-           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+           "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
         },
         "NAME": {
             "describes": "Describes the name of the transport vehicle",
