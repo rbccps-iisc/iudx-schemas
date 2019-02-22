@@ -1,0 +1,97 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "ITMS",
+        "description": "Describes WiFi access points in Pune city",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://{serverIP}:{serverPort}/api/1.0.0/resource",
+            "description": "Resource server",
+            "variables": {
+                "serverIP": {
+                    "default": "localhost"
+                },
+                "serverPort": {
+                    "default": "8080"
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/latest/itms/{NAME}": {
+            "get": {
+                "description": "Get the sensor message as an array between given time points",
+                "responses": {
+                    "200": {
+                        "description": "Sensor Message as JSON",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SensorPacket"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "name": "NAME",
+                    "in": "path",
+                    "description": "Name of the location where sensor is deployed",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "id",
+                    "in": "header",
+                    "description": "User id",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "apikey",
+                    "in": "header",
+                    "description": "API Key",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    },
+    "components": {
+        "schemas": {
+            "SensorPacket": {
+                "title": "Root Type for SensorPacket",
+                "description": "JSON sensor message",
+                "type": "object",
+                "properties": {
+                    "CURRENT_STATUS": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/CURRENT_STATUS"
+                    },
+                    "LASTUPDATEDATETIME": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/LASTUPDATEDATETIME"
+                    },
+                    "POSITION_UPDATE_TIMESTAMP": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/POSITION_UPDATE_TIMESTAMP"
+                    },
+                    "NAME": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/NAME"
+                    },
+                    "LOCATION": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/LOCATION"
+                    }
+                },
+                "example": "{\n    \"ROUTE_NAME\": null,\n    \"STOP_ID\": null,\n    \"CURRENT_STATUS\": \"IN_TRANSIT_TO\",\n    \"LASTUPDATEDATETIME\": \"2018-06-25T23:03:23.820+05:30\",\n    \"TRIP_ID\": null,\n    \"CURRENT_STOP_SEQUENCE\": null,\n    \"ROUTE_ID\": null,\n    \"POSITION_UPDATE_TIMESTAMP\": \"2018-06-25T16:51:41\",\n    \"STOP_NAME\": null,\n    \"SCHEDULE_RELATIONSHIP\": null,\n    \"NAME\": \"CNG252\"\n}"
+            }
+        }
+    }
+}
