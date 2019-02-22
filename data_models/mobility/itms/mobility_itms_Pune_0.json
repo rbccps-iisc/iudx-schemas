@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "base_schemas/iudx_data_item_schema.json#"
+        }
+    ],
+    "describes": "Describes the intelligent transport management system datamodel",
+    "properties": {
+        "CURRENT_STATUS": {
+            "describes": "Status of the transport vehicle",
+            "type": "enum",
+            "enum": ["IN_TRANSIT_TO", "STOPPED_AT"]
+        },
+        "LASTUPDATEDATETIME":{
+            "describes": "Time when the last data was received from this device",
+            "type": "string",
+            "format": "date-time"
+        },
+        "POSITION_UPDATE_TIMESTAMP": {
+            "describes": "Time when the last position was updated",
+            "type": "string",
+            "format": "date-time"
+        },
+        "LOCATION": {
+           "describes": "Current location of the vehicle in geopoint format", 
+           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+        },
+        "NAME": {
+            "describes": "Describes the name of the transport vehicle",
+            "type": "string"
+        }
+    },
+    "required": [
+        "NAME"
+    ]
+}
