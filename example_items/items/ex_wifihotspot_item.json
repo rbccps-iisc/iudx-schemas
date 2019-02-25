@@ -22,9 +22,13 @@
      {
        "resourceServerId": "Chhatrapati Sambhaji Raje",
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_wifi.json"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_wifi.json",
+       "apiObjectVariables": {
+           "NAME": "Chhatrapati Sambhaji Raje",
+           "serverIP": "localhost",
+           "serverPort": "8080"
+        }
      }
   ],
   "HOTSPOT_ID": "2"
-
 }

@@ -22,7 +22,12 @@
      {
        "resourceServerId": "Kalash",
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_env_flood.json"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_env_flood.json",
+       "apiObjectVariables": {
+         "NAME": "Kalash",
+         "serverIP": "localhost",
+         "serverPort": "8080"
+       }
      }
   ],
   "STATION_ID": "FWR015"

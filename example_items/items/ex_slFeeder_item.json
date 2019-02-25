@@ -22,7 +22,12 @@
      {
        "resourceServerId": "NEAR SARSWAT BANK",
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_power_feeder.json"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_power_feeder.json",
+       "apiObjectVariables": {
+           "NAME": "NEAR SARSWAT BANK",
+           "serverIP": "localhost",
+           "serverPort": "8080"
+        }
      }
   ]
 }
