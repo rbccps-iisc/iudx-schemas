@@ -43,6 +43,17 @@
                       "describes": "An object (api JSON object, or a json-schema) to describe access mechanism for this data resource. For example, an OpenAPI JSON object can be used to describe APIs for interacting with this resource. "
                    }
                   ]
+               },
+               "apiObjectVariables": {
+                  "describes": "Object describing some of the instance specific variables used in API objects for this resource",
+                  "type": "object",
+                  "properties": {
+                     "patternProperties": {
+                       "[a-zA-Z0-9]+$": {
+                         
+                       }
+                     }
+                  }
                }
             },
             "required": ["resourceServerId", "accessSchemaType"]

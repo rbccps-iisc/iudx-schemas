@@ -24,7 +24,12 @@
        "resourceServerId": "A_Bt_Square_30",
        "resourceType": "table",
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json",
+       "apiObjectVariables": {
+           "NAME": "A_Bt_Square_30",
+           "serverIP": "localhost",
+           "serverPort": "8080"
+        }
      }
   ],
   "DEVICEID": "169af06f-bfee-3513-56e5-847957490-sensoragent"

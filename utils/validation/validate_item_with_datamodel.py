@@ -21,8 +21,12 @@ data_path = os.path.join(base_dir_abs_path, sys.argv[1])
 with open(data_path) as data_object:
     data = json.load(data_object)
 
-schema_file= os.path.join(root_dir, data['refDataModel'])
-#schema_file= os.path.join(schema_path, data['refCatalogueSchema'])
+filename = data['refDataModel']
+fname = filename.split("master/")[-1]
+
+schema_file= os.path.join(root_dir, fname)
+
+#schema_file= os.path.join(root_dir, data['refDataModel'])
 print schema_file
 
 with open(schema_file) as file_object:
