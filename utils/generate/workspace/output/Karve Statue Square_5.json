@@ -1,0 +1,58 @@
+{
+    "DEVICEID": "7bd8af4f-99bf-2f69-996c-5fde241fb29a", 
+    "NAME": "Karve Statue Square_5", 
+    "__createdAt": "2019-02-25T18:19:26.334178", 
+    "__itemStatus": "active", 
+    "__itemType": "item", 
+    "accessInformation": [
+        {
+            "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json", 
+            "accessSchemaType": "openAPI", 
+            "apiObjectVariables": {
+                "NAME": "Karve Statue Square_5", 
+                "serverIP": "https://pune.iudx.org.in/", 
+                "serverPort": "443"
+            }, 
+            "resourceServerId": "Karve Statue Square_5"
+        }
+    ], 
+    "deviceModelInfo": {
+        "brand": {
+            "name": "Bosch-Climo", 
+            "url": "http://www.boschclimo.com/"
+        }
+    }, 
+    "id": "8898kwiorit9490494", 
+    "itemDescription": "Description for Bosch-Climo AQM resource", 
+    "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/Karve%20Statue%20Square_5", 
+    "location": {
+        "latitude": "18.501802", 
+        "longitude": "73.815409"
+    }, 
+    "provider": {
+        "entityContactPhone": "", 
+        "entityId": "PSCDCL", 
+        "entityIdentityProviderURL": "https://ca.iudx.org.in", 
+        "entityIdentityType": "X509", 
+        "entityURL": "https://punesmartcity.in/"
+    }, 
+    "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json", 
+    "tags": [
+        "air", 
+        "pollution", 
+        "SO2", 
+        "CO2", 
+        "CO", 
+        "NO", 
+        "NO2", 
+        "PM2.5", 
+        "PM10", 
+        "Humidity", 
+        "Temperature", 
+        "Ozone", 
+        "O", 
+        "Noise", 
+        "Light", 
+        "UV"
+    ]
+}

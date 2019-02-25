@@ -1,0 +1,58 @@
+{
+    "DEVICEID": "f40c0b8e-248f-9f62-414e-7e2a7065d53e", 
+    "NAME": "Mundhwa Road Junction_51", 
+    "__createdAt": "2019-02-25T18:19:26.341987", 
+    "__itemStatus": "active", 
+    "__itemType": "item", 
+    "accessInformation": [
+        {
+            "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json", 
+            "accessSchemaType": "openAPI", 
+            "apiObjectVariables": {
+                "NAME": "Mundhwa Road Junction_51", 
+                "serverIP": "https://pune.iudx.org.in/", 
+                "serverPort": "443"
+            }, 
+            "resourceServerId": "Mundhwa Road Junction_51"
+        }
+    ], 
+    "deviceModelInfo": {
+        "brand": {
+            "name": "Bosch-Climo", 
+            "url": "http://www.boschclimo.com/"
+        }
+    }, 
+    "id": "8898kwiorit9490494", 
+    "itemDescription": "Description for Bosch-Climo AQM resource", 
+    "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/Mundhwa%20Road%20Junction_51", 
+    "location": {
+        "latitude": "18.532934", 
+        "longitude": "73.932817"
+    }, 
+    "provider": {
+        "entityContactPhone": "", 
+        "entityId": "PSCDCL", 
+        "entityIdentityProviderURL": "https://ca.iudx.org.in", 
+        "entityIdentityType": "X509", 
+        "entityURL": "https://punesmartcity.in/"
+    }, 
+    "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json", 
+    "tags": [
+        "air", 
+        "pollution", 
+        "SO2", 
+        "CO2", 
+        "CO", 
+        "NO", 
+        "NO2", 
+        "PM2.5", 
+        "PM10", 
+        "Humidity", 
+        "Temperature", 
+        "Ozone", 
+        "O", 
+        "Noise", 
+        "Light", 
+        "UV"
+    ]
+}

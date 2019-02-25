@@ -1,0 +1,58 @@
+{
+    "DEVICEID": "763f8470-1fca-6f8b-3a8b-ee883a0c5f06", 
+    "NAME": "Sadanand Hotel Square_39", 
+    "__createdAt": "2019-02-25T18:19:26.348460", 
+    "__itemStatus": "active", 
+    "__itemType": "item", 
+    "accessInformation": [
+        {
+            "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json", 
+            "accessSchemaType": "openAPI", 
+            "apiObjectVariables": {
+                "NAME": "Sadanand Hotel Square_39", 
+                "serverIP": "https://pune.iudx.org.in/", 
+                "serverPort": "443"
+            }, 
+            "resourceServerId": "Sadanand Hotel Square_39"
+        }
+    ], 
+    "deviceModelInfo": {
+        "brand": {
+            "name": "Bosch-Climo", 
+            "url": "http://www.boschclimo.com/"
+        }
+    }, 
+    "id": "8898kwiorit9490494", 
+    "itemDescription": "Description for Bosch-Climo AQM resource", 
+    "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/Sadanand%20Hotel%20Square_39", 
+    "location": {
+        "latitude": "18.56857", 
+        "longitude": "73.766392"
+    }, 
+    "provider": {
+        "entityContactPhone": "", 
+        "entityId": "PSCDCL", 
+        "entityIdentityProviderURL": "https://ca.iudx.org.in", 
+        "entityIdentityType": "X509", 
+        "entityURL": "https://punesmartcity.in/"
+    }, 
+    "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json", 
+    "tags": [
+        "air", 
+        "pollution", 
+        "SO2", 
+        "CO2", 
+        "CO", 
+        "NO", 
+        "NO2", 
+        "PM2.5", 
+        "PM10", 
+        "Humidity", 
+        "Temperature", 
+        "Ozone", 
+        "O", 
+        "Noise", 
+        "Light", 
+        "UV"
+    ]
+}

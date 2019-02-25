@@ -1,0 +1,58 @@
+{
+    "DEVICEID": "146a3c4f-c6e4-959f-e967-f0cfd5b03dcb", 
+    "NAME": "Golibar Square_11", 
+    "__createdAt": "2019-02-25T18:19:26.331330", 
+    "__itemStatus": "active", 
+    "__itemType": "item", 
+    "accessInformation": [
+        {
+            "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json", 
+            "accessSchemaType": "openAPI", 
+            "apiObjectVariables": {
+                "NAME": "Golibar Square_11", 
+                "serverIP": "https://pune.iudx.org.in/", 
+                "serverPort": "443"
+            }, 
+            "resourceServerId": "Golibar Square_11"
+        }
+    ], 
+    "deviceModelInfo": {
+        "brand": {
+            "name": "Bosch-Climo", 
+            "url": "http://www.boschclimo.com/"
+        }
+    }, 
+    "id": "8898kwiorit9490494", 
+    "itemDescription": "Description for Bosch-Climo AQM resource", 
+    "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/Golibar%20Square_11", 
+    "location": {
+        "latitude": "18.502865", 
+        "longitude": "73.878603"
+    }, 
+    "provider": {
+        "entityContactPhone": "", 
+        "entityId": "PSCDCL", 
+        "entityIdentityProviderURL": "https://ca.iudx.org.in", 
+        "entityIdentityType": "X509", 
+        "entityURL": "https://punesmartcity.in/"
+    }, 
+    "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json", 
+    "tags": [
+        "air", 
+        "pollution", 
+        "SO2", 
+        "CO2", 
+        "CO", 
+        "NO", 
+        "NO2", 
+        "PM2.5", 
+        "PM10", 
+        "Humidity", 
+        "Temperature", 
+        "Ozone", 
+        "O", 
+        "Noise", 
+        "Light", 
+        "UV"
+    ]
+}

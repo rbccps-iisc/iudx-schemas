@@ -1,36 +1,41 @@
 {
   "id": "8898kwiorit9490494",
-  "itemDescription": "AQM item",
+  "itemDescription": "Description for Bosch-Climo AQM resource",
   "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
   "NAME": "A_Bt_Square_30",
   "provider": {
-    "entityId": "smart-cities-rbccps",
+    "entityId": "PSCDCL",
     "entityIdentityType": "X509",
     "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-    "entityURL" : "https://example.iudx-provider.org",
-    "entityContactPhone": "+917234857987"
+    "entityURL" : "https://punesmartcity.in/",
+    "entityContactPhone": ""
   },
   "tags": ["air", "pollution", "SO2", "CO2", "CO", "NO", "NO2", "PM2.5", "PM10", "Humidity", "Temperature", "Ozone", "O", "Noise", "Light", "UV"],
   "location": {
     "latitude": 18.516644,
-    "longitude": 73.854009,
-    "address": "A Bt Square, Pune, India"
+    "longitude": 73.854009
   },
   "__itemStatus": "active",
   "__itemType": "item",
   "__createdAt": "2019-02-20T10:30:06.093121",
+  "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/XYZ",
   "accessInformation": [
      {
        "resourceServerId": "A_Bt_Square_30",
-       "resourceType": "table",
        "accessSchemaType": "openAPI",
        "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json",
        "apiObjectVariables": {
            "NAME": "A_Bt_Square_30",
-           "serverIP": "localhost",
-           "serverPort": "8080"
+           "serverIP": "https://pune.iudx.org.in/",
+           "serverPort": "443"
         }
      }
   ],
+  "deviceModelInfo": {
+      "brand": {
+        "name": "Bosch-Climo",
+        "url": "http://www.boschclimo.com/"
+      }
+  },
   "DEVICEID": "169af06f-bfee-3513-56e5-847957490-sensoragent"
 }
