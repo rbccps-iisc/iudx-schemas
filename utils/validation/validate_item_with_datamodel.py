@@ -2,6 +2,8 @@ import os
 import json
 import jsonschema
 import sys
+import validators
+import urllib2
 
 cwd = os.getcwd()
 #base_dir_abs_path = cwd+'/'+sys.argv[3]
@@ -22,17 +24,16 @@ with open(data_path) as data_object:
     data = json.load(data_object)
 
 filename = data['refDataModel']
-fname = filename.split("master/")[-1]
-
-schema_file= os.path.join(root_dir, fname)
-
-#schema_file= os.path.join(root_dir, data['refDataModel'])
-print schema_file
-
-with open(schema_file) as file_object:
-    schema = json.load(file_object)
-
-
+if validators.url(filename):
+   print "URI File"
+   schemaobject = urllib2.urlopen(filename)
+   schema =  json.load(schemaobject)
+else:
+   schema_file= os.path.join(root_dir, data['refDataModel'])
+   print schema_file
+   with open(schema_file) as file_object:
+      schema = json.load(file_object)
+   
 # Note that the second parameter does nothing.
 #resolver = jsonschema.RefResolver('file://' + base_dir_abs_path + '/', None)
 resolver = jsonschema.RefResolver('file://' + root_dir + '/.', None)
