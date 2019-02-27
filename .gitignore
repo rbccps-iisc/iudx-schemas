@@ -1,1 +1,4 @@
 ./utils/generate/workspace/output/*
+./utils/generate/workspace/output_wifi/*
+./utils/generate/workspace/output_shree/*
+./utils/generate/workspace/*

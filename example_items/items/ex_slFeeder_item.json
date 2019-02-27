@@ -3,17 +3,19 @@
   "itemDescription": "Streetlight Feeder Item",
   "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
   "provider": {
-    "entityId": "smart-cities-rbccps",
+    "entityId": "PSCDCL",
     "entityIdentityType": "X509",
     "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-    "entityURL" : "https://example.iudx-provider.org",
-    "entityContactPhone": "+917234857987"
+    "entityURL" : "https://punesmartcity.in/",
+    "entityContactPhone": ""
   },
   "NAME": "NEAR SARSWAT BANK",
   "location": {
     "latitude": 18.4813499,
     "longitude": 73.89856
   },
+  "PANEL_ID": "18419",
+  "PANEL_NAME": "KN-13",
   "tags":["streetlighting","streetlight","feeder", "power"],
   "__itemStatus": "active",
   "__itemType": "item",
@@ -25,8 +27,8 @@
        "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_power_feeder.json",
        "apiObjectVariables": {
            "NAME": "NEAR SARSWAT BANK",
-           "serverIP": "localhost",
-           "serverPort": "8080"
+           "serverIP": "https://pune.iudx.org.in/",
+           "serverPort": "443"
         }
      }
   ]
