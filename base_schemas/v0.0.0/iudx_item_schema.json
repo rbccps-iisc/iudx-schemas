@@ -13,7 +13,17 @@
     },
     "refDataModel": {
       "type": "string",
-      "describes": "Reference to the data model for this catalog item. Will be validated against this data-model(schema). It is assumed that the referred to data-model(schema) has already been uploaded into the catalog OR stored in a pre-defined repository."
+      "format": "uri",
+      "describes": "Reference to the data model for this catalog item. It is assumed that the referred to data-model(schema) has already been uploaded into the catalog OR stored in a pre-defined repository. The catalogue item comprises of fields from the refDataModel along with the refBaseSchema."
+    },
+    "refBaseSchema": {
+      "type": "string",
+      "format": "uri",
+      "describes": "Reference to the IUDX base schema for this catalog item. It is assumed that the referred base schema has already been uploaded into the catalog OR stored in a pre-defined repository. The catalogue item comprises of fields from the refDataModel along with the refBaseSchema."
+    },
+    "refBaseSchemaRelease": {
+      "type": "string",
+      "describes": "Release number/label associated with the IUDX base schema (refBaseSchema) used for this item."
     },
     "provider": {
       "$ref": "iudx_base_def.json#/definitions/entityIdSchema",
@@ -50,6 +60,10 @@
        "type": "string",
        "format": "date-time",
        "describes": "Date/time when this entry was deprecated (status set to deprecated)."
+    },
+    "__catalogueInstanceId": {
+       "type": "string",
+       "describes": "Registered Id of the IUDX-catalouge instance to which this item belongs."
     }
   },
   "additionalProperties": {
