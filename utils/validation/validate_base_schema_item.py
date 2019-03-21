@@ -32,17 +32,19 @@ with open(schema_file) as file_object:
 
 
 # Note that the second parameter does nothing.
-resolver = jsonschema.RefResolver('file://' + root_dir_path + path_for_schema, None)
+#resolver = jsonschema.RefResolver('file://' + root_dir_path + path_for_schema, None)
 
 # This will find the correct validator and instantiate it using the resolver.
 # Requires that your schema a line like this: "$schema": "http://json-schema.org/draft-04/schema#"
 try:
- jsonschema.validate(data, schema, resolver=resolver)
+ #jsonschema.validate(data, schema, resolver=resolver)
+ jsonschema.validate(data, schema)
 
 except jsonschema.exceptions.ValidationError as errV:
  print "Validation Error Occured"
  #print errV
- v = jsonschema.Draft7Validator(schema, types=(), resolver=resolver, format_checker=None)
+ #v = jsonschema.Draft7Validator(schema, types=(), resolver=resolver, format_checker=None)
+ v = jsonschema.Draft7Validator(schema, types=(), format_checker=None)
  #for error in sorted(v.iter_errors(data), key=str):
  #    print(error.message)
  errors = sorted(v.iter_errors(data), key=lambda e: e.path)
