@@ -3,7 +3,7 @@
   "describes": "Schema of catalog entries with associated data resources.",
   "type": "object",
   "allOf": [
-   {"$ref": "iudx_item_schema.json#"}
+   {"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_item_schema.json#"}
   ],
   "properties": {
      "accessInformation": {
