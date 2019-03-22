@@ -2,6 +2,7 @@ import os
 import json
 import jsonschema
 import sys
+import wget
 
 cwd = os.getcwd()
 base_dir_abs_path = cwd+'/'
@@ -21,13 +22,20 @@ with open(data_path) as data_object:
 
 relative_schema_file_path = data['refBaseSchema'].split('/')[-3] + '/'+data['refBaseSchema'].split('/')[-2]+'/'+data['refBaseSchema'].split('/')[-1]
 path_for_schema = data['refBaseSchema'].split('/')[-3] + '/'+data['refBaseSchema'].split('/')[-2]+'/'
-schema_file = os.path.join(base_dir_abs_path, relative_schema_file_path)
+#schema_file = os.path.join(base_dir_abs_path, relative_schema_file_path)
+schema_url = data['refBaseSchema']
+#wget.download(schema_url)
+schema_name = data['refBaseSchema'].split('/')[-1]
+with open(wget.download(schema_url),'r') as fobj:
+   schema = json.load(fobj)
+
+os.remove(cwd+'/'+schema_name)
 
 #schema_file= os.path.join(schema_path, data['refCatalogueSchema'])
 #print schema_file
 
-with open(schema_file) as file_object:
-    schema = json.load(file_object)
+#with open(schema_file) as file_object:
+#    schema = json.load(file_object)
 
 
 

@@ -1,0 +1,31 @@
+{
+  "id": "8898kwiorit9490494",
+  "itemDescription": "Description of a resource",
+  "refDataModel": "not_required.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_data_item_schema.json",
+  "refBaseSchemaRelease": "v0.0.0",
+  "provider": {
+    "entityId": "PSCDCL",
+    "entityIdentityType": "X509",
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://punesmartcity.in/",
+    "entityContactPhone": ""
+  },
+  "tags": [ "air", "pollution", "SO2", "CO2", "CO", "NO"],
+  "__itemStatus": "active",
+  "__itemType": "item",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "__catalogueInstanceId": "2019-02-20T10:30:06.093121",
+  "__updatedAt": "2019-02-20T10:30:06.093121",
+  "accessInformation": [
+     {
+       "accessSchemaType": "openAPI",
+       "accessSchema": "link-to-apiObject",
+       "accessVariables": {
+          "resourceServerId": "pune-IMB-IOC-LandT",
+          "resourceId": "A_Bt_Square_30",
+          "resourceClass": "bosch-climo"
+        }
+     }
+  ]
+}

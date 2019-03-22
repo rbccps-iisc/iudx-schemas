@@ -3,7 +3,7 @@
   "describes": "Schema of catalog entries with associated data resources.",
   "type": "object",
   "allOf": [
-   {"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_item_schema.json#"}
+   {"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_item_schema.json#"}
   ],
   "properties": {
      "accessInformation": {
@@ -12,10 +12,6 @@
         "items": {
             "type": "object",
             "properties": {
-               "resourceServerId": {
-                  "type": "string",
-                  "describes": "Id of the resource with the 'resource-server'"
-               },
                "resourceType": {
                   "type": "string",
                   "enum": ["table", "file", "message", "messageStream", "gis", "media", "service", "other"],
@@ -44,19 +40,27 @@
                    }
                   ]
                },
-               "apiObjectVariables": {
-                  "describes": "Object describing some of the instance specific variables used in API objects for this resource",
+               "accessVariables": {
+                  "describes": "Object describing some of the instance specific variables used in API objects or objects specified by access schema for this resource",
                   "type": "object",
                   "properties": {
-                     "patternProperties": {
-                       "[a-zA-Z0-9]+$": {
-                         
-                       }
+                     "resourceServerId": {
+                        "type": "string",
+                        "describes": "Id of the resource-server."
+                     },
+                     "resourceId": {
+                        "type": "string",
+                        "describes": "Id of the resource on the resource-server."
+                     },
+                     "resourceClass": {
+                        "type": "string",
+                        "describes": "Identifier for the resource category/class to which this resource belongs. This resource category/class is defined/chosen by the resource server."
                      }
-                  }
+                  },
+                  "required": ["resourceServerId", "resourceId", "resourceClass"]
                }
             },
-            "required": ["resourceServerId", "accessSchemaType"]
+            "required": ["accessSchemaType", "accessSchema"]
         }
      }
   },
