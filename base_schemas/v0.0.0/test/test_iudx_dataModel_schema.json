@@ -1,0 +1,32 @@
+{
+  "id": "8898kwiorit9490494",
+  "itemDescription": "Description of a resource",
+  "refDataModel": "not_required.json",
+  "tags": [ "temperature"],
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_dataModel_schema.json",
+  "refBaseSchemaRelease": "v0.0.0",
+  "dataModelSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "temperature": {
+           "type": "string"
+        }
+    },
+    "required": ["temperature"],
+    "additionalProperties": false
+  },
+  "baseDataModel": "Some-already-uploaded-baseDataModel",
+  "provider": {
+    "entityId": "PSCDCL",
+    "entityIdentityType": "X509",
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://punesmartcity.in/",
+    "entityContactPhone": ""
+  },
+  "__itemStatus": "active",
+  "__itemType": "dataModel",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "__catalogueInstanceId": "test-catalogue-rbccps",
+  "__updatedAt": "2019-02-20T10:30:06.093121"
+}
