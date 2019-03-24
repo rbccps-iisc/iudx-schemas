@@ -1,20 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "allOf": [
-        {
-            "$ref": "base_schemas/iudx_data_item_schema.json#"
-        }
-    ],
-    "describes": "Air Quality data model for AQM sensors deployed in Pune City.",
+    "describes": "Air Quality Base dataModel for AQM sensors deployed in Pune City.",
     "properties": {
         "location": {
            "describes": "Physical location of the AQM sensor", 
-           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+           "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
         },
         "deviceModelInfo": {
             "describes": "Information about the air quality monitoring device",
-            "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+            "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
         },
         "DEVICEID": {
             "describes": "Device ID's as per the device data model",
@@ -36,8 +31,6 @@
         },
         "AQI": {
             "describes": "Overall AQI ",
-            "maximum": 1000.0,
-            "minimum": 0.0,
             "type": "number",
             "units": "dimensionless"
         },
@@ -62,15 +55,11 @@
         "CO2_MAX": {
             "describes": "Maximum value of CO2 for the last 24 hours",
             "type": "number",
-            "maximum": 5000,
-            "minimum": 0,
             "units": "ppm"
         },
         "CO2_MIN": {
             "describes": "Minimum value of CO2 for the last 24 hours",
             "type": "number",
-            "maximum": 5000,
-            "minimum": 0,
             "units": "ppm"
         },
         "CO_MAX": {
@@ -97,100 +86,72 @@
         },
         "HUMIDITY": {
             "describes": "Relative humidity",
-            "maximum": 100,
-            "minimum": 0,
             "type": "number",
             "units": "percentage"
         },
         "LIGHT": {
             "describes": "Light in lux",
-            "maximum": 188000,
-            "minimum": 0,
             "type": "number",
             "units": "lux"
         },
         "NO2_MAX": {
             "describes": "Maximum value of NO2 for the last 24 hours",
-            "maximum": 300,
-            "minimum": 0,
             "type": "number",
             "units": "ppb"
         },
         "NO2_MIN": {
             "describes": "Minimum value of NO2 for the last 24 hours",
-            "maximum": 300,
-            "minimum": 0,
             "type": "number",
             "units": "ppb"
         },
         "NO_MAX": {
             "describes": "Maximum value of NO for the last 24 hours",
             "type": "number",
-            "maximum": 300,
-            "minimum": 0,
             "units": "ppb"
         },
         "NO_MIN": {
             "describes": "Minimum value of NO for the last 24 hours",
             "type": "number",
-            "maximum": 300,
-            "minimum": 0,
             "units": "ppb"
         },
         "OZONE_MAX": {
             "describes": "Maximum value of Ozone for the last 24 hours",
             "type": "number",
-            "maximum": 400,
-            "minimum": 0,
             "units": "ppb"
         },
         "OZONE_MIN": {
             "describes": "Minimum value of Ozone for the last 24 hours",
             "type": "number",
-            "maximum": 400,
-            "minimum": 0,
             "units": "ppb"
         },
         "PM10_MAX": {
             "describes": "Maximum value of PM10 for the last 24 hours",
             "type": "number",
-            "maximum": 1000.0,
-            "minimum": 0.0,
             "units": "ug/m3"
         },
         "PM10_MIN": {
             "describes": "Minimum value of PM10 for the last 24 hours",
             "type": "number",
-            "maximum": 1000.0,
-            "minimum": 0.0,
             "units": "ug/m3"
         },
         "PM2_MAX": {
             "describes": "Maximum value of PM2.5 for the last 24 hours",
             "type": "number",
-            "maximum": 500.0,
-            "minimum": 0.0,
             "units": "ug/m3"
         },
         "PM2_MIN": {
             "describes": "Minimum value of PM2.5 for the last 24 hours",
             "type": "number",
-            "maximum": 500.0,
-            "minimum": 0.0,
             "units": "ug/m3"
         },
         "SO2_MAX": {
             "describes": "Maximum value of SO2 for the last 24 hours",
             "type": "number",
-            "maximum": 700.0,
-            "minimum": 0.0,
             "units": "ppb"
         },
         "SO2_MIN": {
             "describes": "Minimum value of SO2 for the last 24 hours",
             "type": "number",
-            "maximum": 700.0,
-            "minimum": 0.0,
             "units": "ppb"
         },
         "STATUS": {
@@ -201,29 +162,21 @@
         "TEMPRATURE_MAX": {
             "describes": "Maximum value of Temperature for the last 24 hours",
             "type": "number",
-            "maximum": 70,
-            "minimum": -40,
             "units": "degreeCelsius"
         },
         "TEMPRATURE_MIN": {
             "describes": "Minimum value of Temperature for the last 24 hours",
             "type": "number",
-            "maximum": 70,
-            "minimum": -40,
             "units": "degreeCelsius"
         },
         "UV_MAX": {
             "describes": "Maximum value of UV for the last 24 hours",
             "type": "number",
-            "maximum": 15,
-            "minimum": 0,
             "units": "UVI"
         },
         "UV_MIN": {
             "describes": "Minimum value of UV for the last 24 hours",
             "type": "number",
-            "maximum": 15,
-            "minimum": 0,
             "units": "UVI"
         }
     },

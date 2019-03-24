@@ -1,33 +1,28 @@
 {
   "id": "8898kwiorit9490494",
   "itemDescription": "Description for Bosch-Climo AQM resource",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
-  "NAME": "A_Bt_Square_30",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/exdataModel_env_aqm_climoPune_0.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_data_item_schema.json",
+  "refBaseSchemaRelease": "v0.0.0",
   "provider": {
     "entityId": "PSCDCL",
     "entityIdentityType": "X509",
     "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-    "entityURL" : "https://punesmartcity.in/",
-    "entityContactPhone": ""
+    "entityURL" : "https://punesmartcity.in/"
   },
   "tags": ["air", "pollution", "SO2", "CO2", "CO", "NO", "NO2", "PM2.5", "PM10", "Humidity", "Temperature", "Ozone", "O", "Noise", "Light", "UV"],
-  "location": {
-    "latitude": 18.516644,
-    "longitude": 73.854009
-  },
   "__itemStatus": "active",
   "__itemType": "item",
   "__createdAt": "2019-02-20T10:30:06.093121",
   "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/XYZ",
   "accessInformation": [
      {
-       "resourceServerId": "A_Bt_Square_30",
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_Env_climo.json",
-       "apiObjectVariables": {
-           "NAME": "A_Bt_Square_30",
-           "serverIP": "https://pune.iudx.org.in/",
-           "serverPort": "443"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json",
+       "accessVariables": {
+          "resourceServerId": "https://pune.iudx.org.in:443",
+          "resourceId": "A_Bt_Square_30",
+          "resourceClass": "aqm-bosch-climo"
         }
      }
   ],
@@ -36,6 +31,11 @@
         "name": "Bosch-Climo",
         "url": "http://www.boschclimo.com/"
       }
+  },
+  "NAME": "A_Bt_Square_30",
+  "location": {
+    "latitude": 18.516644,
+    "longitude": 73.854009
   },
   "DEVICEID": "169af06f-bfee-3513-56e5-847957490-sensoragent"
 }

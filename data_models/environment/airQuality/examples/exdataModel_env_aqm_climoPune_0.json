@@ -1,0 +1,245 @@
+{
+  "id": "catalogue-env_aqm_climoPune_0",
+  "itemDescription": "Data Model for AQM sensor deployed in Pune City",
+  "tags": ["bosch-climo", "Air", "Pollution", "SO2", "CO2", "CO", "NO", "NO2", "PM2.5", "PM10", "Humidity", "Temperature", "Ozone", "O", "Noise", "Light", "UV"],
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_dataModel_schema.json",
+  "refBaseSchemaRelease": "v0.0.0",
+  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/env_aqm_climoPune_0.json",
+  "provider": { 
+    "entityId": "PSCDCL", 
+    "entityIdentityType": "X509", 
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://punesmartcity.in/"
+  },
+  "__itemStatus": "active",
+  "__itemType": "dataModel",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "dataModelSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "describes": "Air Quality Base dataModel for AQM sensors deployed in Pune City.",
+      "properties": {
+          "location": {
+             "describes": "Physical location of the AQM sensor", 
+             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+          },
+          "deviceModelInfo": {
+              "describes": "Information about the air quality monitoring device",
+              "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+          },
+          "DEVICEID": {
+              "describes": "Device ID's as per the device data model",
+              "type": "string"
+          },
+          "NAME": {
+              "describes": "Name of the device.",
+              "type": "string"
+          },
+          "LASTUPDATEDATETIME":{
+              "describes": "Time when the last data was received from this device",
+              "type": "string",
+              "format": "date-time"
+          },
+          "AIR_PRESSURE": {
+              "describes": "Measured Air pressure",
+              "type": "string",
+              "units": "atm"
+          },
+          "AQI": {
+              "describes": "Overall AQI ",
+              "maximum": 1000.0,
+              "minimum": 0.0,
+              "type": "number",
+              "units": "dimensionless"
+          },
+          "AQI_POLLUTANT": {
+              "describes": "Major pollutant in the AQI index.",
+              "enum": [
+                  "CO",
+                  "SO2",
+                  "NO",
+                  "NO2",
+                  "PM_10",
+                  "PM2_5",
+                  "OZONE"
+              ],
+              "type": "string"
+          },
+          "SOUND": {
+            "description": "Instantaneous Noise level",
+            "type": "number",
+            "units" : "dB"
+          },
+          "CO2_MAX": {
+              "describes": "Maximum value of CO2 for the last 24 hours",
+              "type": "number",
+              "maximum": 5000,
+              "minimum": 0,
+              "units": "ppm"
+          },
+          "CO2_MIN": {
+              "describes": "Minimum value of CO2 for the last 24 hours",
+              "type": "number",
+              "maximum": 5000,
+              "minimum": 0,
+              "units": "ppm"
+          },
+          "CO_MAX": {
+              "describes": "Maximum value of CO for the last 24 hours",
+              "type": "number",
+              "units": "ppm"
+          },
+          "CO_MIN": {
+              "describes": "Minimum value of CO for the last 24 hours",
+              "type": "number",
+              "units": "ppm"
+          },
+          "CATEGORY": {
+              "describes": "Quality indication",
+              "enum": [
+                  "GOOD",
+                  "MODERATE",
+                  "UNHEALTHY",
+                  "VERY UNHEALTHY",
+                  "HAZARDOUS",
+                  "POOR"
+              ],
+              "type": "string"
+          },
+          "HUMIDITY": {
+              "describes": "Relative humidity",
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number",
+              "units": "percentage"
+          },
+          "LIGHT": {
+              "describes": "Light in lux",
+              "maximum": 188000,
+              "minimum": 0,
+              "type": "number",
+              "units": "lux"
+          },
+          "NO2_MAX": {
+              "describes": "Maximum value of NO2 for the last 24 hours",
+              "maximum": 300,
+              "minimum": 0,
+              "type": "number",
+              "units": "ppb"
+          },
+          "NO2_MIN": {
+              "describes": "Minimum value of NO2 for the last 24 hours",
+              "maximum": 300,
+              "minimum": 0,
+              "type": "number",
+              "units": "ppb"
+          },
+          "NO_MAX": {
+              "describes": "Maximum value of NO for the last 24 hours",
+              "type": "number",
+              "maximum": 300,
+              "minimum": 0,
+              "units": "ppb"
+          },
+          "NO_MIN": {
+              "describes": "Minimum value of NO for the last 24 hours",
+              "type": "number",
+              "maximum": 300,
+              "minimum": 0,
+              "units": "ppb"
+          },
+          "OZONE_MAX": {
+              "describes": "Maximum value of Ozone for the last 24 hours",
+              "type": "number",
+              "maximum": 400,
+              "minimum": 0,
+              "units": "ppb"
+          },
+          "OZONE_MIN": {
+              "describes": "Minimum value of Ozone for the last 24 hours",
+              "type": "number",
+              "maximum": 400,
+              "minimum": 0,
+              "units": "ppb"
+          },
+          "PM10_MAX": {
+              "describes": "Maximum value of PM10 for the last 24 hours",
+              "type": "number",
+              "maximum": 1000.0,
+              "minimum": 0.0,
+              "units": "ug/m3"
+          },
+          "PM10_MIN": {
+              "describes": "Minimum value of PM10 for the last 24 hours",
+              "type": "number",
+              "maximum": 1000.0,
+              "minimum": 0.0,
+              "units": "ug/m3"
+          },
+          "PM2_MAX": {
+              "describes": "Maximum value of PM2.5 for the last 24 hours",
+              "type": "number",
+              "maximum": 500.0,
+              "minimum": 0.0,
+              "units": "ug/m3"
+          },
+          "PM2_MIN": {
+              "describes": "Minimum value of PM2.5 for the last 24 hours",
+              "type": "number",
+              "maximum": 500.0,
+              "minimum": 0.0,
+              "units": "ug/m3"
+          },
+          "SO2_MAX": {
+              "describes": "Maximum value of SO2 for the last 24 hours",
+              "type": "number",
+              "maximum": 700.0,
+              "minimum": 0.0,
+              "units": "ppb"
+          },
+          "SO2_MIN": {
+              "describes": "Minimum value of SO2 for the last 24 hours",
+              "type": "number",
+              "maximum": 700.0,
+              "minimum": 0.0,
+              "units": "ppb"
+          },
+          "STATUS": {
+              "describes": "Indiates if the resource is on or off",
+              "type": "string",
+              "enum": [ "ON", "OFF" ]
+          },
+          "TEMPRATURE_MAX": {
+              "describes": "Maximum value of Temperature for the last 24 hours",
+              "type": "number",
+              "maximum": 70,
+              "minimum": -40,
+              "units": "degreeCelsius"
+          },
+          "TEMPRATURE_MIN": {
+              "describes": "Minimum value of Temperature for the last 24 hours",
+              "type": "number",
+              "maximum": 70,
+              "minimum": -40,
+              "units": "degreeCelsius"
+          },
+          "UV_MAX": {
+              "describes": "Maximum value of UV for the last 24 hours",
+              "type": "number",
+              "maximum": 15,
+              "minimum": 0,
+              "units": "UVI"
+          },
+          "UV_MIN": {
+              "describes": "Minimum value of UV for the last 24 hours",
+              "type": "number",
+              "maximum": 15,
+              "minimum": 0,
+              "units": "UVI"
+          }
+      },
+      "required": [
+          "DEVICEID", "NAME", "location"
+      ]
+  }
+}
