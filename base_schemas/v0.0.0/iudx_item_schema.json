@@ -69,5 +69,5 @@
   "additionalProperties": {
     "type": ["number", "integer", "null", "string", "object", "boolean", "array"]
   },
-  "required": ["id", "refDataModel", "provider", "tags"]
+  "required": ["id", "refDataModel", "refBaseSchema", "provider", "tags"]
 }
