@@ -1,16 +1,17 @@
 {
   "id": "akdfi74938nid8kjfvko4",
   "itemDescription": "Flood sensing station",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json",
-  "NAME": "Kalash",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_data_item_schema.json",
+  "refBaseSchemaRelease": "v0.0.0",
   "provider": {
     "entityId": "smart-cities-rbccps",
     "entityIdentityType": "X509",
     "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-    "entityURL" : "https://example.iudx-provider.org",
-    "entityContactPhone": "+917234857987"
+    "entityURL" : "https://example.iudx-provider.org"
   },
-  "tags": ["flooding", "flood"],
+  "tags": ["flooding", "flood", "flood alert", "flood danger"],
+  "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/flood-sensor/XYZ",
   "location": {
     "latitude": 18.581797,
     "longitude": 73.8727111
@@ -20,15 +21,15 @@
   "__createdAt": "2019-02-20T10:30:06.093121",
   "accessInformation": [
      {
-       "resourceServerId": "Kalash",
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/example_items/apiObjects/example_env_flood.json",
-       "apiObjectVariables": {
-         "NAME": "Kalash",
-         "serverIP": "localhost",
-         "serverPort": "8080"
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+       "accessVariables": {
+          "resourceServerId": "https://pune.iudx.org.in:443",
+          "resourceId": "XYZ",
+          "resourceClass": "flood-sensor"
        }
      }
   ],
+  "NAME": "XYZ",
   "STATION_ID": "FWR015"
 }
