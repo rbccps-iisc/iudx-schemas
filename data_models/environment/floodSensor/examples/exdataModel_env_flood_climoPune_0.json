@@ -1,0 +1,78 @@
+{
+  "id": "catalogue-env_flood_climoPune_0",
+  "itemDescription": "Data Model for flood sensor deployed in Pune City",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_dataModel_schema.json",
+  "refBaseSchemaRelease": "v0.0.0",
+  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/env_flood_climoPune_0.json",
+  "provider": { 
+    "entityId": "PSCDCL", 
+    "entityIdentityType": "X509", 
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://punesmartcity.in/"
+  },
+  "tags": ["flooding", "flood", "flood alert", "flood danger"],
+  "__itemStatus": "active",
+  "__itemType": "dataModel",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "dataModelSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "describes": "Flood Sensor data model for flood sensors deployed in Pune City.",
+      "properties": {
+          "location": {
+             "describes": "Physical location of the sensor", 
+             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+          },
+          "deviceModelInfo": {
+              "describes": "Information about the flood sensing device",
+              "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+          },
+          "STATION_ID": {
+              "describes": "Sensing station ID as per the device data model",
+              "type": "string"
+          },
+          "NAME": {
+              "describes": "Name of the device.",
+              "type": "string"
+          },
+          "LASTUPDATEDATETIME":{
+              "describes": "Time when the last data was received from this device",
+              "type": "string",
+              "format": "date-time"
+          },
+          "SITE_STATUS": {
+              "describes": "Functional status of flood sensing site/station/device",
+              "type": "string",
+              "enum": [ "Active", "Inactive" ]
+          },
+          "STATUS": {
+              "describes": "Flooding Level STATUS",
+              "type": "string",
+              "enum": [ "Danger", "Alert", "Normal"]
+          },
+          "DANGER": {
+              "describes": "Reference Danger Level setting for the given sensing station. If CUR_LEVEL is greater than DANGER then the flooding status is flagged as 'Danger'",
+              "type": "string"
+          },
+          "ALERT": {
+              "describes": "Reference Alert Level setting for the given sensing station. If CUR_LEVEL is greater than ALERT then a flooding 'Alert' is generated",
+              "type": "string"
+          },
+          "CUR_LEVEL": {
+              "describes": "Current flooding level  detected by a given sensing station. Sensing device uses 'REF_LEVEL' and 'M_DISTANCE' parameters to compute CUR_LEVEL",
+              "type": "string"
+          },
+          "REF_LEVEL": {
+              "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
+              "type": "string"
+          },
+          "M_DISTANCE": {
+              "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
+              "type": "string"
+          }
+      },
+      "required": [
+          "STATION_ID", "NAME", "location"
+      ]
+  }
+}
