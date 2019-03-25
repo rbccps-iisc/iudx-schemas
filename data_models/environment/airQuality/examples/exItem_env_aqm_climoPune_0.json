@@ -1,8 +1,8 @@
 {
   "id": "8898kwiorit9490494",
   "itemDescription": "Description for Bosch-Climo AQM resource",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/exdataModel_env_aqm_climoPune_0.json#/dataModelSchema",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_data_item_schema.json",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/exdataModel_env_aqm_climoPune_0.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_data_item_schema.json",
   "refBaseSchemaRelease": "v0.0.0",
   "provider": {
     "entityId": "PSCDCL",
@@ -18,7 +18,7 @@
   "accessInformation": [
      {
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json",
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json",
        "accessVariables": {
           "resourceServerId": "https://pune.iudx.org.in:443",
           "resourceId": "A_Bt_Square_30",

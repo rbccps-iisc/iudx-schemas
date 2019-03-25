@@ -26,7 +26,7 @@
       "describes": "Release number/label associated with the IUDX base schema (refBaseSchema) used for this item."
     },
     "provider": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_base_def.json#/definitions/entityIdSchema",
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_base_def.json#/definitions/entityIdSchema",
       "describes": "Describes the 'provider' entity for this catalog item."
     },
     "authorisationFormat": {
@@ -34,7 +34,7 @@
        "describes": "Format of authorisation token. For example, 'OpenAuth2.0', 'UMA2.0', 'AzureSAS' and similar others."
     },
     "tags": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_base_def.json#/definitions/tagsSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_base_def.json#/definitions/tagsSchema"
     },
     "__itemStatus": {
        "type": "string",
