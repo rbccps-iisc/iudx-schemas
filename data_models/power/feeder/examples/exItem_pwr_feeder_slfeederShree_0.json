@@ -1,7 +1,7 @@
 {
   "id": "u7734jd399834r8696",
   "itemDescription": "Streetlight Feeder Item",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema",
   "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_data_item_schema.json",
   "refBaseSchemaRelease": "v0.0.0",
   "provider": {
@@ -25,7 +25,7 @@
   "accessInformation": [
      {
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
        "accessVariables": {
           "resourceServerId": "https://pune.iudx.org.in:443",
           "resourceId": "XYZ",

@@ -1,9 +1,9 @@
 {
   "id": "catalogue-pwr_feeder_slfeederShree_0",
   "itemDescription": "Data Model for data from WiFi HotSpots deployed in Pune City",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_dataModel_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_dataModel_schema.json",
   "refBaseSchemaRelease": "v0.0.0",
-  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
+  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
   "provider": { 
     "entityId": "PSCDCL", 
     "entityIdentityType": "X509", 
@@ -21,11 +21,11 @@
       "properties": {
           "location": {
              "describes": "Physical location of the feeder", 
-             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
           },
           "deviceModelInfo": {
               "describes": "Information about the feeder device",
-              "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+              "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
           },
           "B_PHASE_CURRENT": {
               "describes": "Gives B Phase Current",
