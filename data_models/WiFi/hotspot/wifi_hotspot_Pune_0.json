@@ -1,16 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "allOf": [
-        {
-            "$ref": "base_schemas/iudx_data_item_schema.json#"
-        }
-    ],
     "describes": "Data model for WiFi Hotspots installed in Pune City",
     "properties": {
         "location": {
            "describes": "Hotspot location", 
-           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+           "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_modelsschema_defs/locationDefs.json#/definitions/locationSchema"
         },
         "HOTSPOT_ID": {
             "describes": "Hotspot ID as per the device data model",
