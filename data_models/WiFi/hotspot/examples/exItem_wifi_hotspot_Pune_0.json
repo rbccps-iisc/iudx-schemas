@@ -1,7 +1,7 @@
 {
   "id": "akdfi74938nid8kjfvko4",
   "itemDescription": "WiFi HotSpot",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
   "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_data_item_schema.json",
   "refBaseSchemaRelease": "v0.0.0",
   "provider": {
