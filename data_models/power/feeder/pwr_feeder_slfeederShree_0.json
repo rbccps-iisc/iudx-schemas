@@ -1,20 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "allOf": [
-        {
-            "$ref": "base_schemas/iudx_data_item_schema.json#"
-        }
-    ],
     "describes": "Data model for electric power feeder providing power to a group of streetlights.",
     "name": "StreetLightingSreePanel",
     "properties": {
         "location": {
            "describes": "Physical location of the feeder", 
-           "$ref": "data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+           "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
         },
         "deviceModelInfo": {
             "describes": "Information about the feeder device",
-            "$ref": "data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+            "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
         },
         "B_PHASE_CURRENT": {
             "describes": "Gives B Phase Current",

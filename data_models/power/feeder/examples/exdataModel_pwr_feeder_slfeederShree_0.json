@@ -1,0 +1,109 @@
+{
+  "id": "catalogue-pwr_feeder_slfeederShree_0",
+  "itemDescription": "Data Model for data from WiFi HotSpots deployed in Pune City",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_dataModel_schema.json",
+  "refBaseSchemaRelease": "v0.0.0",
+  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
+  "provider": { 
+    "entityId": "PSCDCL", 
+    "entityIdentityType": "X509", 
+    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+    "entityURL" : "https://punesmartcity.in/"
+  },
+  "__itemStatus": "active",
+  "__itemType": "dataModel",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "tags":["streetlighting","streetlight","feeder", "power"],
+  "dataModelSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "describes": "Data model for electric power feeder providing power to a group of streetlights.",
+      "name": "StreetLightingSreePanel",
+      "properties": {
+          "location": {
+             "describes": "Physical location of the feeder", 
+             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+          },
+          "deviceModelInfo": {
+              "describes": "Information about the feeder device",
+              "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+          },
+          "B_PHASE_CURRENT": {
+              "describes": "Gives B Phase Current",
+              "type": "string",
+              "units": "Ampere"
+          },
+          "B_PHASE_POWER": {
+              "describes": "Gives B Phase Power",
+              "type": "string",
+              "units": "Watts"
+          },
+          "B_PHASE_VOLTAGE": {
+              "describes": "Gives B Phase Voltage",
+              "type": "string",
+              "units": "Volts"
+          },
+          "LASTUPDATEDATETIME": {
+              "describes": "Time at which the lastest change occured",
+              "type": "string"
+          },
+          "LIGHT_STATUS": {
+              "describes": "Currents status of the feeder device",
+              "type": "string",
+              "enum": ["On", "Off"]
+          },
+          "NAME": {
+              "describes": "Name of the locality",
+              "type": "string"
+          },
+          "PANEL_ID": {
+              "describes": "Uniquie ID assigned to the mounted panel",
+              "type": "string"
+          },
+          "PANEL_NAME": {
+              "describes": "Name of the Panel Mounted",
+              "type": "string"
+          },
+          "R_PHASE_CURRENT": {
+              "describes": "Gives R Phase Current",
+              "type": "string",
+              "units": "Ampere"
+          },
+          "R_PHASE_POWER": {
+              "describes": "Gives R Phase Power",
+              "type": "string",
+              "units": "Watts"
+          },
+          "R_PHASE_VOLTAGE": {
+              "describes": "Gives R Phase Voltage",
+              "type": "string",
+              "units": "Volts"
+          },
+          "TOTAL_LIGHTS": {
+              "describes": "Indication of the number of Lights under the given feeder",
+              "type": "string"
+          },
+          "TOTAL_LOAD": {
+              "describes": "Total expected load on the feeder.",
+              "type": "string"
+          },
+          "Y_PHASE_CURRENT": {
+              "describes": "Gives Y Phase Current",
+              "type": "string",
+              "units": "Ampere"
+          },
+          "Y_PHASE_POWER": {
+              "describes": "Gives Y Phase Power",
+              "type": "string",
+              "units": "Watts"
+          },
+          "Y_PHASE_VOLTAGE": {
+              "describes": "Gives Y Phase Voltage",
+              "type": "string",
+              "units": "Volts"
+          }
+      },
+      "required": [
+          "NAME", "location"
+      ]
+  }
+}
