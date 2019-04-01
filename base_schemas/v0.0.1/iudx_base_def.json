@@ -64,7 +64,7 @@
              "describes": "Contains URL link for the item being referred to."
           }
        },
-       "required": ["describes", "itemType"]
+       "required": ["itemType"]
     },
     "sharingTypeSchema" : {
       "type": "string",
