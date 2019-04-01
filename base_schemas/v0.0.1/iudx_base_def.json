@@ -15,7 +15,11 @@
     "providerItemSchema": {
        "type": "object",
        "properties": {
-          "description": {
+          "name": {
+             "type": "string",
+             "describes": "Name of the provider."
+          },
+          "describes": {
              "type": "string",
              "describes": "Describes the contents of item to which link is being provided"
           },
@@ -38,9 +42,13 @@
     "resourceServerItemSchema": {
        "type": "object",
        "properties": {
+          "name": {
+             "type": "string",
+             "describes": "Name of the provider."
+          },
           "describes": {
              "type": "string",
-             "describes": "Describes the item to which link is being provided"
+             "describes": "Describes the contents of item to which link is being provided"
           },
           "itemType": {
              "type": "string",

@@ -5,7 +5,7 @@
   "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_item_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
-    "description": "PSCDCL",
+    "name": "PSCDCL",
     "itemType": "provider",
     "itemId": "al74709345984395007094"
   },
