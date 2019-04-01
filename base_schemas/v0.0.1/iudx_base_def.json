@@ -12,6 +12,16 @@
         "type": "string"
       }
     },
+    "itemTypeSchema": {
+       "type": "string",
+       "enum": ["provider", "resource-server", "resource-item", "tags-item", "access-object", "base-schema", "catalogue-item"],
+       "describes": "Type of an item. Schema or an information document."
+    },
+    "itemStatusSchema": {
+       "type": "string",
+       "enum": ["active", "deprecated"],
+       "describes": "Status of an item. In production version of catalogue, for purposes of provenance, one can choose to not delete an item but set its status to 'deprecated'. All the older versions of an updated item may be persisted by setting their status as 'deprecated'. Only the current item containing latest updates should have status set to 'active'."
+    },
     "providerItemSchema": {
        "type": "object",
        "properties": {

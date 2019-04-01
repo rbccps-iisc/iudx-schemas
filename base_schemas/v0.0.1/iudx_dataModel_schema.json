@@ -21,8 +21,7 @@
       "describes": "Link to base data model object on which this data model is based. The catalogue entry for this data model, qualifies (adds additional information) to each of the attributes contained in the base data model. For example, an attribute 'temperature' of type 'number' and units 'degreeCelcius' may be defined in the base model and in this catalogue entry further specific constraints may be added like 'minimum', 'maximum' ranges OR sharing policies OR links to semantic contexts for this attribute."
     },
     "provider": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/entityIdSchema",
-      "describes": "Describes the 'provider' entity for this catalog item."
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/providerItemSchema"
     },
     "tags": {
       "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/tagsSchema"
@@ -32,14 +31,10 @@
         "describes": "Schema for the data model"
     },
     "__itemStatus": {
-       "type": "string",
-       "enum": ["active", "deprecated"],
-       "describes": "Status of an item. In production version of catalogue, for purposes of provenance, one can choose to not delete an item but set its status to 'deprecated'. All the older versions of an updated item may be persisted by setting their status as 'deprecated'. Only the current item containing latest updates should have status set to 'active'."
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
     },
     "__itemType": {
-       "type": "string",
-       "enum": ["dataModel"],
-       "describes": "Type of the catalogue entry."
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemTypeSchema"
     },
     "__createdAt": {
        "type": "string",

@@ -17,14 +17,12 @@
   },
   "baseDataModel": "Some-already-uploaded-baseDataModel",
   "provider": {
-    "entityId": "PSCDCL",
-    "entityIdentityType": "X509",
-    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-    "entityURL" : "https://punesmartcity.in/",
-    "entityContactPhone": ""
+    "name": "PSCDCL",
+    "itemType": "provider",
+    "itemId": "al74709345984395007094"
   },
   "__itemStatus": "active",
-  "__itemType": "dataModel",
+  "__itemType": "data-model",
   "__createdAt": "2019-02-20T10:30:06.093121",
   "__catalogueInstanceId": "test-catalogue-rbccps",
   "__updatedAt": "2019-02-20T10:30:06.093121"
