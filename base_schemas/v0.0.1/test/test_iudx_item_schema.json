@@ -1,0 +1,18 @@
+{
+  "id": "8898kwiorit9490494",
+  "itemDescription": "Description of a resource",
+  "refDataModel": "not_required.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_item_schema.json",
+  "refBaseSchemaRelease": "v0.0.1",
+  "provider": {
+    "description": "PSCDCL",
+    "itemType": "provider",
+    "itemId": "al74709345984395007094"
+  },
+  "tags": [ "air", "pollution", "SO2", "CO2", "CO", "NO"],
+  "__itemStatus": "active",
+  "__itemType": "resource-item",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "__catalogueInstanceId": "2019-02-20T10:30:06.093121",
+  "__updatedAt": "2019-02-20T10:30:06.093121"
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "describes": "Schema of catalog entries with associated data resources.",
+  "type": "object",
+  "allOf": [
+   {"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_item_schema.json#"}
+  ],
+  "properties": {
+     "resourceServer": {
+       "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/resourceServerItemSchema"
+     },
+     "resourceId": {
+        "type": "string",
+        "describes": "Id of the resource on the resource-server. It should be unique on the resource-server."
+     },
+     "resourceGroup": {
+        "type": "string",
+        "describes": "Identifier/Name for the resource group (category/class) to which this resource belongs. This resource group category/class is defined by the resource server. All resource-items belonging to a resourceGroup should have same data model and should serve same data using same access objects."
+     },
+     "accessInformation": {
+        "type": "array",
+        "describes": "List of access mechanisms available for data associated with this catalog item",
+        "items": {
+            "type": "object",
+            "properties": {
+               "resourceType": {
+                  "type": "string",
+                  "enum": ["table", "file", "message", "messageStream", "gis", "media", "service", "other"],
+                  "describes": "Type of data resource"
+               },
+               "accessObjectType": {
+                  "type": "string",
+                  "describes": "Type of access mechanism. For example, 'openAPI', 'asyncAPI', 'custom'. Can be changed to ENUM later."
+               },
+               "accessObjectURL": {
+                  "type": "string",
+                   "format": "uri",
+                  "describes": "URL that has more information about meta-data of this resource"
+               },
+               "accessObject": {
+                  "oneOf": [
+                   {
+                      "title": "Link to API/JSON-schema object",
+                      "type": "string",
+                      "describes": "Link to an object (api JSON object, or a json-schema) to describe access mechanism for this data resource."
+                   },
+                   { 
+                      "title": "Embedded API/JSON-schema object",
+                      "type": "object",
+                      "describes": "An object (api JSON object, or a json-schema) to describe access mechanism for this data resource. For example, an OpenAPI JSON object can be used to describe APIs for interacting with this resource. "
+                   }
+                  ]
+               },
+               "accessVariables": {
+                  "describes": "Object describing some of the instance specific variables used in API objects or objects specified by access schema for this resource",
+                  "type": "object",
+                  "patternProperties": {
+                    "[a-zA-Z0-9]+$": {
+                        "type": "string"
+                     }
+                  }
+               }
+            },
+            "required": ["accessObjectType", "accessObject"]
+        }
+     }
+  },
+  "required":["accessInformation", "resourceServer", "resourceGroup", "resourceId"]
+}
