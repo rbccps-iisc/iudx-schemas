@@ -14,7 +14,7 @@
     },
     "itemTypeSchema": {
        "type": "string",
-       "enum": ["provider", "resource-server", "resource-item", "tags-item", "access-object", "base-schema", "catalogue-item"],
+       "enum": ["data-model", "provider", "resource-server", "resource-item", "tags-item", "access-object", "base-schema", "catalogue-item"],
        "describes": "Type of an item. Schema or an information document."
     },
     "itemStatusSchema": {
