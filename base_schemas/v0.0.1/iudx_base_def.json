@@ -45,7 +45,7 @@
     },
     "providerItemSchema": {
        "type": "object",
-       "$ref": "#/definitions/refToAnotherItemSchema",
+       "$ref": "#/definitions/refToAnotherItemSchema#",
        "properties": {
           "refItemName": {
              "type": "string",
