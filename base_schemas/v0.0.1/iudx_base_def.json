@@ -45,7 +45,7 @@
     },
     "providerItemSchema": {
        "type": "object",
-       "$ref": "#/definitions/refToAnotherItemSchema#",
+       "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToAnotherItemSchema",
        "properties": {
           "refItemName": {
              "type": "string",
