@@ -6,7 +6,7 @@
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
     "refItemName": "PSCDCL",
-    "efItemId": "al74709345984395007094"
+    "refItemId": "al74709345984395007094"
   },
   "tags": [ "air", "pollution", "SO2", "CO2", "CO", "NO"],
   "__itemStatus": "active",
