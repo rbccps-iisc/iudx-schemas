@@ -40,6 +40,7 @@
              "describes": "Contains URL link for the item being referred to."
           }
        },
+       "additionalProperties": true,
        "required": ["refItemId"]
     },
     "providerItemSchema": {
