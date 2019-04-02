@@ -39,13 +39,13 @@
              "format": "uri",
              "describes": "Contains URL link for the item being referred to."
           }
-       },
-       "additionalProperties": true,
-       "required": ["refItemId"]
+       }
     },
     "providerItemSchema": {
        "type": "object",
-       "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToAnotherItemSchema",
+       "allOf": [
+       {"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToAnotherItemSchema"}
+       ],
        "properties": {
           "refItemName": {
              "type": "string",
