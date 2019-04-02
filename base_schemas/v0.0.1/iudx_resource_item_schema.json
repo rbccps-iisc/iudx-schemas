@@ -3,11 +3,11 @@
   "describes": "Schema of catalog entries with associated data resources.",
   "type": "object",
   "allOf": [
-   {"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_item_schema.json#"}
+   {"$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_item_schema.json#"}
   ],
   "properties": {
      "resourceServer": {
-       "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/resourceServerItemSchema"
+       "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/resourceServerItemSchema"
      },
      "resourceId": {
         "type": "string",

@@ -2,12 +2,12 @@
   "id": "8898kwiorit9490494",
   "itemDescription": "Description of a resource",
   "refDataModel": "not_required.json",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_resource_item_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
-    "name": "PSCDCL",
-    "itemType": "provider",
-    "itemId": "al74709345984395007094"
+    "refItemName": "PSCDCL",
+    "refItemType": "provider",
+    "refItemId": "al74709345984395007094"
   },
   "tags": [ "air", "pollution", "SO2", "CO2", "CO", "NO"],
   "__itemStatus": "active",
@@ -16,9 +16,9 @@
   "__catalogueInstanceId": "2019-02-20T10:30:06.093121",
   "__updatedAt": "2019-02-20T10:30:06.093121",
   "resourceServer": {
-    "name": "PSCDCL-IBM-IOC",
-    "itemType": "resource-server",
-    "itemId": "bfe5384r889888994"
+    "refItemName": "PSCDCL-IBM-IOC",
+    "refItemType": "resource-server",
+    "refItemId": "bfe5384r889888994"
   },
   "resourceGroup": "bosch-aqm-climo",
   "resourceId": "A_Bt_Square_30", 

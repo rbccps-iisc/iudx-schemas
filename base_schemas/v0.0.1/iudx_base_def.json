@@ -39,8 +39,7 @@
              "format": "uri",
              "describes": "Contains URL link for the item being referred to."
           }
-       },
-       "required": ["itemType"]
+       }
     },
     "providerItemSchema": {
        "type": "object",

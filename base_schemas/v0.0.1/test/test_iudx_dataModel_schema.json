@@ -2,7 +2,7 @@
   "id": "8898kwiorit9490494",
   "itemDescription": "Description of a resource",
   "tags": [ "temperature"],
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_dataModel_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_dataModel_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "dataModelSchema": {
     "$schema": "http://json-schema.org/draft-07/schema#",
