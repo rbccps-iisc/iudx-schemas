@@ -5,11 +5,11 @@
     "properties": {
         "location": {
            "describes": "Physical location of the feeder", 
-           "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+           "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
         },
         "deviceModelInfo": {
             "describes": "Information about the feeder device",
-            "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+            "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
         },
         "B_PHASE_CURRENT": {
             "describes": "Gives B Phase Current",
