@@ -39,7 +39,8 @@
              "format": "uri",
              "describes": "Contains URL link for the item being referred to."
           }
-       }
+       },
+       "required": ["refItemId"]
     },
     "providerItemSchema": {
        "type": "object",
@@ -54,7 +55,7 @@
              "enum": ["provider"]
           }
        },
-       "required": ["refItemName", "refItemId"]
+       "required": ["refItemName"]
     },
     "resourceServerItemSchema": {
        "type": "object",

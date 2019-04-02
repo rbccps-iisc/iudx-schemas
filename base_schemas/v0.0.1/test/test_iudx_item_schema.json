@@ -5,9 +5,8 @@
   "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_item_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
-    "name": "PSCDCL",
-    "itemType": "provider",
-    "itemId": "al74709345984395007094"
+    "refItemName": "PSCDCL",
+    "refItemId": "al74709345984395007094"
   },
   "tags": [ "air", "pollution", "SO2", "CO2", "CO", "NO"],
   "__itemStatus": "active",
