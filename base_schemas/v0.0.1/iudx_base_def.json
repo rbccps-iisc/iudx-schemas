@@ -54,7 +54,7 @@
              "enum": ["provider"]
           }
        },
-       "required": ["refItemName", "refItemId", "refItemType"]
+       "required": ["refItemName", "refItemId"]
     },
     "resourceServerItemSchema": {
        "type": "object",
@@ -69,7 +69,7 @@
              "enum": ["resource-server"]
           }
        },
-       "required": ["refItemType", "refItemId", "refItemName"]
+       "required": ["refItemId", "refItemName"]
     },
     "sharingTypeSchema" : {
       "type": "string",
