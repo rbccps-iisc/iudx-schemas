@@ -22,26 +22,19 @@
        "enum": ["active", "deprecated"],
        "describes": "Status of an item. In production version of catalogue, for purposes of provenance, one can choose to not delete an item but set its status to 'deprecated'. All the older versions of an updated item may be persisted by setting their status as 'deprecated'. Only the current item containing latest updates should have status set to 'active'."
     },
-    "providerItemSchema": {
+    "refToAnotherItemSchema": {
        "type": "object",
+       "describes": "Attributes describing the link to another item",
        "properties": {
-          "name": {
-             "type": "string",
-             "describes": "Name of the provider."
-          },
           "describes": {
              "type": "string",
              "describes": "Describes the contents of item to which link is being provided"
           },
-          "itemType": {
-             "type": "string",
-             "enum": ["provider"]
-          },
-          "itemId": {
+          "refItemId": {
              "type": "string",
              "describes": "Contains 'id' of the item being referred to. 'id' is of type UUID"
           },
-          "itemURL": {
+          "refItemURL": {
              "type": "string",
              "format": "uri",
              "describes": "Contains URL link for the item being referred to."
@@ -49,32 +42,35 @@
        },
        "required": ["itemType"]
     },
-    "resourceServerItemSchema": {
+    "providerItemSchema": {
        "type": "object",
+       "$ref": "#/definitions/refToAnotherItemSchema",
        "properties": {
-          "name": {
+          "refItemName": {
              "type": "string",
              "describes": "Name of the provider."
           },
-          "describes": {
+          "refItemType": {
              "type": "string",
-             "describes": "Describes the contents of item to which link is being provided"
-          },
-          "itemType": {
-             "type": "string",
-             "enum": ["resource-server"]
-          },
-          "itemId": {
-             "type": "string",
-             "describes": "Contains 'id' of the item being referred to. 'id' is of type UUID"
-          },
-          "itemURL": {
-             "type": "string",
-             "format": "uri",
-             "describes": "Contains URL link for the item being referred to."
+             "enum": ["provider"]
           }
        },
-       "required": ["itemType"]
+       "required": ["refItemName", "refItemId", "refItemType"]
+    },
+    "resourceServerItemSchema": {
+       "type": "object",
+       "properties": {
+       "$ref": "#/definitions/refToAnotherItemSchema",
+          "refItemName": {
+             "type": "string",
+             "describes": "Name of the resource server."
+          },
+          "refItemType": {
+             "type": "string",
+             "enum": ["resource-server"]
+          }
+       },
+       "required": ["refItemType", "refItemId", "refItemName"]
     },
     "sharingTypeSchema" : {
       "type": "string",
