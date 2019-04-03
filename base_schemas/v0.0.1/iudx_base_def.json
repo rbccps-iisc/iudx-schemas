@@ -43,7 +43,9 @@
     },
     "providerItemSchema": {
        "type": "object",
-       "$ref": "#/definitions/refToAnotherItemSchema",
+       "allOf": [
+         {"$ref": "#/definitions/refToAnotherItemSchema"}
+       ],
        "properties": {
           "refItemName": {
              "type": "string",
@@ -58,7 +60,9 @@
     },
     "resourceServerItemSchema": {
        "type": "object",
-       "$ref": "#/definitions/refToAnotherItemSchema",
+       "allOf": [
+         {"$ref": "#/definitions/refToAnotherItemSchema"}
+       ],
        "properties": {
           "refItemName": {
              "type": "string",

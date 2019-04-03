@@ -17,9 +17,8 @@
   },
   "baseDataModel": "Some-already-uploaded-baseDataModel",
   "provider": {
-    "name": "PSCDCL",
-    "itemType": "provider",
-    "itemId": "al74709345984395007094"
+    "refItemName": "PSCDCL",
+    "refItemId": "al74709345984395007094"
   },
   "__itemStatus": "active",
   "__itemType": "data-model",
