@@ -1,0 +1,37 @@
+{
+  "id": "akdfi74938nid8kjfvko4",
+  "itemDescription": "Flood sensing station",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+  "refBaseSchemaRelease": "v0.0.1",
+  "provider": {
+    "refItemName": "PSCDCL",
+    "refItemId": "al74709345984395007094"
+  },
+  "resourceServer": {
+    "refItemName": "PSCDCL-IBM-IOC",
+    "refItemId": "bfe5384r889888994"
+  },
+  "resourceGroup": "flood-sensor",
+  "resourceId": "XYZ",
+  "tags": ["flooding", "flood", "flood alert", "flood danger"],
+  "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/flood-sensor/XYZ",
+  "location": {
+    "latitude": 18.581797,
+    "longitude": 73.8727111
+  },
+  "__itemStatus": "active",
+  "__itemType": "resource-item",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "accessInformation": [
+     {
+       "accessObjectType": "openAPI",
+       "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+       "accessVariables": {
+          "NAME": "XYZ"
+       }
+     }
+  ],
+  "NAME": "XYZ",
+  "STATION_ID": "FWR015"
+}

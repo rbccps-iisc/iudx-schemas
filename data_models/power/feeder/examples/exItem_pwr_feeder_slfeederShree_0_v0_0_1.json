@@ -1,0 +1,38 @@
+{
+  "id": "u7734jd399834r8696",
+  "itemDescription": "Streetlight Feeder Item",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+  "refBaseSchemaRelease": "v0.0.1",
+  "provider": {
+    "refItemName": "PSCDCL",
+    "refItemId": "al74709345984395007094"
+  },
+  "resourceServer": {
+    "refItemName": "PSCDCL-IBM-IOC",
+    "refItemId": "bfe5384r889888994"
+  },
+  "resourceGroup": "streetlight-feeder-sree",
+  "resourceId": "XYZ",
+  "NAME": "XYZ",
+  "location": {
+    "latitude": 18.4813499,
+    "longitude": 73.89856
+  },
+  "PANEL_ID": "18419",
+  "PANEL_NAME": "KN-13",
+  "tags":["streetlighting","streetlight","feeder", "power"],
+  "__itemStatus": "active",
+  "__itemType": "resource-item",
+  "__createdAt": "2019-02-20T17:30:06.093121",
+  "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/latest/streetlight-feeder-sree/XYZ",
+  "accessInformation": [
+     {
+       "accessObjectType": "openAPI",
+       "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
+       "accessVariables": {
+          "NAME": "XYZ"
+        }
+     }
+  ]
+}
