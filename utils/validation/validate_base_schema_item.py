@@ -38,6 +38,7 @@ if (sys.argv[2] == "0"):
       schema = json.load(fobj)
 
    os.remove(cwd+'/'+schema_name)
+   print "\n"
 
    try:
       jsonschema.validate(data, schema)
