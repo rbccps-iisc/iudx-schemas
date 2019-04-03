@@ -36,6 +36,7 @@ item_schema = {
   ]
 }
 #print item_schema['allOf'][0]['$ref']
+#print json.dumps(item_schema)
 
 # Note that the second parameter does nothing.
 #resolver = jsonschema.RefResolver('file://' + root_dir_path + path_for_schema, None)
