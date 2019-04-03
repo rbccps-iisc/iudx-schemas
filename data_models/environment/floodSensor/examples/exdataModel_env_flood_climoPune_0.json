@@ -1,9 +1,9 @@
 {
   "id": "catalogue-env_flood_climoPune_0",
   "itemDescription": "Data Model for flood sensor deployed in Pune City",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_dataModel_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_dataModel_schema.json",
   "refBaseSchemaRelease": "v0.0.0",
-  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/env_flood_climoPune_0.json",
+  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/env_flood_climoPune_0.json",
   "provider": { 
     "entityId": "PSCDCL", 
     "entityIdentityType": "X509", 
@@ -21,11 +21,11 @@
       "properties": {
           "location": {
              "describes": "Physical location of the sensor", 
-             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
           },
           "deviceModelInfo": {
               "describes": "Information about the flood sensing device",
-              "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
+              "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/miscSchemaDotOrgDefs.json#/definitions/productSchema"
           },
           "STATION_ID": {
               "describes": "Sensing station ID as per the device data model",

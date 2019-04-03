@@ -159,52 +159,52 @@
                 "type": "object",
                 "properties": {
                     "B_PHASE_POWER": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/B_PHASE_POWER"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/B_PHASE_POWER"
                     },
                     "R_PHASE_POWER": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/R_PHASE_POWER"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/R_PHASE_POWER"
                     },
                     "Y_PHASE_VOLTAGE": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/Y_PHASE_VOLTAGE"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/Y_PHASE_VOLTAGE"
                     },
                     "PANEL_NAME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/PANEL_NAME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/PANEL_NAME"
                     },
                     "Y_PHASE_POWER": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/Y_PHASE_POWER"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/Y_PHASE_POWER"
                     },
                     "PANEL_ID": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/PANEL_ID"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/PANEL_ID"
                     },
                     "TOTAL_LIGHTS": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/TOTAL_LIGHTS"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/TOTAL_LIGHTS"
                     },
                     "NAME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/NAME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/NAME"
                     },
                     "R_PHASE_CURRENT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/R_PHASE_CURRENT"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/R_PHASE_CURRENT"
                     },
                     "R_PHASE_VOLTAGE": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/R_PHASE_VOLTAGE"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/R_PHASE_VOLTAGE"
                     },
                     "LASTUPDATEDATETIME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
                     },
                     "Y_PHASE_CURRENT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/Y_PHASE_CURRENT"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/Y_PHASE_CURRENT"
                     },
                     "B_PHASE_CURRENT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/B_PHASE_CURRENT"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/B_PHASE_CURRENT"
                     },
                     "B_PHASE_VOLTAGE": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/B_PHASE_VOLTAGE"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/B_PHASE_VOLTAGE"
                     },
                     "TOTAL_LOAD": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/TOTAL_LOAD"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/TOTAL_LOAD"
                     },
                     "LIGHT_STATUS": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/LIGHT_STATUS"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema/properties/LIGHT_STATUS"
                     }
                 },
                 "example": "{\n    \"B_PHASE_POWER\": \"0.0\",\n    \"R_PHASE_POWER\": \"0.0\",\n    \"Y_PHASE_VOLTAGE\": \"237.1\",\n    \"PANEL_NAME\": \"KN-13\",\n    \"Y_PHASE_POWER\": \"0.0\",\n    \"PANEL_ID\": \"18419\",\n    \"TOTAL_LIGHTS\": \"0\",\n    \"NAME\": \"NEAR SARSWAT BANK\",\n    \"R_PHASE_CURRENT\": \"0.0\",\n    \"R_PHASE_VOLTAGE\": \"235.1\",\n    \"LASTUPDATEDATETIME\": \"2019-01-22T12:32:41.967+05:30\",\n    \"Y_PHASE_CURRENT\": \"0.0\",\n    \"B_PHASE_CURRENT\": \"0.0\",\n    \"B_PHASE_VOLTAGE\": \"239.8\",\n    \"TOTAL_LOAD\": \"0\",\n    \"LIGHT_STATUS\": \"Off\"\n}"
