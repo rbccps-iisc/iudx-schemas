@@ -1,0 +1,65 @@
+{
+  "openapi": "3.0.1",
+    "info": {
+      "title": "TemperatureCO2Sensor",
+      "version": "1.0.0"
+    },
+    "servers": [
+    {
+      "url": "https://iudx.resourceserver.org:8080/api/1.0.0/resource",
+      "description": "Resource server"
+    }
+    ],
+    "paths": {
+      "/latest/aqm-temp-co2/{resourceId}": {
+	"get": {
+	  "description": "Get the sensor essage as an array between given time points",
+	  "responses": {
+	    "200": {
+	      "description": "Sensor Message as JSON",
+	      "content": {
+		"application/json": {
+		  "schema": {
+		    "$ref": "#/components/schemas/SensorPacket"
+		  }
+		}
+	      }
+	    }
+	  }
+	},
+	"parameters": [
+	{
+	  "name": "resourceId",
+	  "in": "path",
+	  "description": "Id of the location where sensor is deployed",
+	  "required": true,
+	  "schema": {
+	    "type": "string"
+	  }
+	}
+	]
+      }
+    },
+    "components": {
+      "schemas": {
+	"SensorPacket": {
+	  "description": "JSON Packet response of the API",
+	  "type": "object",
+	  "properties": {
+	    "NAME": {
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/name"
+	    },
+	    "LASTUPDATEDATETIME": {
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
+	    },
+	    "CO2_MAX": {
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/CO2_MAX"
+	    },
+	    "TEMPRATURE_MAX": {
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/TEMPRATURE_MAX"
+	    }
+	  }
+	}
+      }
+    }
+}

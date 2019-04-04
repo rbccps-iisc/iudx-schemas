@@ -140,34 +140,34 @@
                 "type": "object",
                 "properties": {
                     "DANGER": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/DANGER"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/DANGER"
                     },
                     "CUR_LEVEL": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/CUR_LEVEL"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/CUR_LEVEL"
                     },
                     "STATUS": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/STATUS"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/STATUS"
                     },
                     "M_DISTANCE": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/M_DISTANCE"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/M_DISTANCE"
                     },
                     "REF_LEVEL": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/REF_LEVEL"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/REF_LEVEL"
                     },
                     "LASTUPDATEDATETIME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
                     },
                     "SITE_STATUS": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/SITE_STATUS"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/SITE_STATUS"
                     },
                     "ALERT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/ALERT"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/ALERT"
                     },
                     "STATION_ID": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/STATION_ID"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/STATION_ID"
                     },
                     "NAME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/NAME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/NAME"
                     }
                 },
                 "example": "{\n    \"DANGER\": \"2.0\",\n    \"CUR_LEVEL\": \"0.37\",\n    \"STATUS\": \"Normal\",\n    \"M_DISTANCE\": \"4.63\",\n    \"REF_LEVEL\": \"5.0\",\n    \"LASTUPDATEDATETIME\": \"2019-02-20T14:48:49.136+05:30\",\n    \"SITE_STATUS\": \"Active\",\n    \"ALERT\": \"1.0\",\n    \"STATION_ID\": \"FWR015\",\n    \"NAME\": \"Kalash\"\n}"

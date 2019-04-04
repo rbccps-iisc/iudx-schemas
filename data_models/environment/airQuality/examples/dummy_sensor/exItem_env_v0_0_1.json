@@ -1,0 +1,35 @@
+{
+  "id": "34f9409a-4bef-454a-89f1-26789f93a24d",
+  "itemDescription": "Description for an CO2 and Temperature sensor",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+  "refBaseSchemaRelease": "v0.0.1",
+  "provider": {
+    "refItemName": "IUDX-Provider-ABC",
+    "refItemId": "36474639-8afe-95bd-901e-987abfe102de"
+  },
+  "tags": ["pollution", "CO2", "Temperature"],
+  "__itemStatus": "active",
+  "__itemType": "resource-item",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "resourceServer": {
+     "refItemName": "IUDX-ResourceServer-XYZ",
+     "refItemId": "9673f569-ade5-09ad-45fa-0abd098a86af"
+   },
+   "resourceGroup": "aqm-temp-co2",
+   "resourceId": "cv-raman-rd-1130",
+   "accessInformation": [
+      {
+        "accessObjectType": "openAPI",
+        "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/exApiObject_env_dummy.json",
+        "accessVariables": {
+           "resourceId": "cv-raman-rd-1130"
+         }
+      }
+   ],
+   "NAME": "cv-raman-rd-1130",
+   "location": {
+     "latitude": 13.014232,
+     "longitude": 77.572123
+   }
+}
