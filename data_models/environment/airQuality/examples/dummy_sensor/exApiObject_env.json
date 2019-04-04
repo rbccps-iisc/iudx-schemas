@@ -47,16 +47,16 @@
 	  "type": "object",
 	  "properties": {
 	    "NAME": {
-	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/NAME"
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/NAME"
 	    },
 	    "LASTUPDATEDATETIME": {
-	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
 	    },
 	    "CO2_MAX": {
-	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/CO2_MAX"
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/CO2_MAX"
 	    },
 	    "TEMPRATURE_MAX": {
-	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/TEMPRATURE_MAX"
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/TEMPRATURE_MAX"
 	    }
 	  }
 	}

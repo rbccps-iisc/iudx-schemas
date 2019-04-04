@@ -26,16 +26,16 @@
       "describes": "Release number/label associated with the IUDX base schema (refBaseSchema) used for this item."
     },
     "provider": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToProviderItemSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToProviderItemSchema"
     },
     "tags": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/tagsSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/tagsSchema"
     },
     "__itemStatus": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
     },
     "__itemType": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemTypeSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemTypeSchema"
     },
     "__createdAt": {
        "type": "string",

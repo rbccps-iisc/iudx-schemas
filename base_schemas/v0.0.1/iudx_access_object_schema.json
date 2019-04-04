@@ -21,17 +21,17 @@
       "describes": "Reference to the IUDX base schema for this catalog entry. It is assumed that the referred base schema has already been uploaded into the catalog OR stored in a pre-defined repository. The catalogue item comprises of fields from the refDataModel along with the refBaseSchema."
     },
     "refDataModelItem": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToDataModelItemSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToDataModelItemSchema"
     },
     "accessObject": {
         "type": "object",
         "describes": "Access mechanism object (For example, API Object etc.)"
     },
     "__itemStatus": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
     },
     "__itemType": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemTypeSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemTypeSchema"
     },
     "__createdAt": {
        "type": "string",

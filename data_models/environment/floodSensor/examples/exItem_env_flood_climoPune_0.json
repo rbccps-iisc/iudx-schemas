@@ -1,8 +1,8 @@
 {
   "id": "akdfi74938nid8kjfvko4",
   "itemDescription": "Flood sensing station",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_data_item_schema.json",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_data_item_schema.json",
   "refBaseSchemaRelease": "v0.0.0",
   "provider": {
     "entityId": "smart-cities-rbccps",
@@ -22,7 +22,7 @@
   "accessInformation": [
      {
        "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
        "accessVariables": {
           "resourceServerId": "https://pune.iudx.org.in:443",
           "resourceId": "XYZ",
