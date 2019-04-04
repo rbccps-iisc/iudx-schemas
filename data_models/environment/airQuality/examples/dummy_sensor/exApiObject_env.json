@@ -13,7 +13,7 @@
     "paths": {
       "/latest/aqm-temp-co2/{resourceId}": {
 	"get": {
-	  "description": "Get the sensor essage as an array between given time points",
+	  "description": "Get the sensor message for a given resourceId",
 	  "responses": {
 	    "200": {
 	      "description": "Sensor Message as JSON",
@@ -47,7 +47,7 @@
 	  "type": "object",
 	  "properties": {
 	    "NAME": {
-	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/name"
+	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/NAME"
 	    },
 	    "LASTUPDATEDATETIME": {
 	      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema/properties/LASTUPDATEDATETIME"

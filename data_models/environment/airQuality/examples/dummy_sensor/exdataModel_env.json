@@ -10,7 +10,7 @@
     "refItemId": "36474639-8afe-95bd-901e-987abfe102de"
   },
   "__itemStatus": "active",
-  "__itemType": "dataModel",
+  "__itemType": "data-model",
   "__createdAt": "2019-02-20T10:30:06.093121",
   "dataModelSchema": {
       "$schema": "http://json-schema.org/draft-07/schema#",
