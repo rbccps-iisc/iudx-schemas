@@ -1,18 +1,17 @@
 {
-  "id": "catalogue-env_flood_climoPune_0",
+  "id": "897543945-437a-4757-adef345834",
+  "name": "catalogue-env_flood_climoPune_0",
   "itemDescription": "Data Model for flood sensor deployed in Pune City",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_dataModel_schema.json",
-  "refBaseSchemaRelease": "v0.0.0",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_data_model_schema.json",
+  "refBaseSchemaRelease": "v0.0.1",
   "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/floodSensor/env_flood_climoPune_0.json",
-  "provider": { 
-    "entityId": "PSCDCL", 
-    "entityIdentityType": "X509", 
-    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-    "entityURL" : "https://punesmartcity.in/"
+  "provider": {
+    "refItemName": "PSCDCL",
+    "refItemId": "al74709345984395007094"
   },
   "tags": ["flooding", "flood", "flood alert", "flood danger"],
   "__itemStatus": "active",
-  "__itemType": "dataModel",
+  "__itemType": "data-model",
   "__createdAt": "2019-02-20T10:30:06.093121",
   "dataModelSchema": {
       "$schema": "http://json-schema.org/draft-07/schema#",

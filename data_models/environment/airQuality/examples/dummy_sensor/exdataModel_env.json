@@ -1,8 +1,9 @@
 {
-  "id": "catalogue-env-example",
+  "id": "94797394504585435550498",
+  "name": "catalogue-env-example",
   "itemDescription": "Data Model for CO2, Temperature sensor",
   "tags": ["air", "pollution", "CO2","Temperature"],
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_dataModel_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_data_model_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/env_aqm_climoPune_0.json",
   "provider": {
