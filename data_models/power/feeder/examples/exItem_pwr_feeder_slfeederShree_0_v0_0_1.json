@@ -1,8 +1,8 @@
 {
   "id": "u7734jd399834r8696",
   "itemDescription": "Streetlight Feeder Item",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exdataModel_pwr_feeder_slfeederShree_0.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_resource_item_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
     "refItemName": "PSCDCL",
@@ -29,7 +29,7 @@
   "accessInformation": [
      {
        "accessObjectType": "openAPI",
-       "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
+       "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
        "accessVariables": {
           "NAME": "XYZ"
         }

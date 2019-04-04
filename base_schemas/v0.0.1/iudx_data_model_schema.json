@@ -25,20 +25,20 @@
       "describes": "Link to base data model object on which this data model is based. The catalogue entry for this data model, qualifies (adds additional information) to each of the attributes contained in the base data model. For example, an attribute 'temperature' of type 'number' and units 'degreeCelcius' may be defined in the base model and in this catalogue entry further specific constraints may be added like 'minimum', 'maximum' ranges OR sharing policies OR links to semantic contexts for this attribute."
     },
     "provider": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/providerItemSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/providerItemSchema"
     },
     "tags": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/tagsSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/tagsSchema"
     },
     "dataModelSchema": {
         "type": "object",
         "describes": "Schema for the data model"
     },
     "__itemStatus": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
     },
     "__itemType": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemTypeSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemTypeSchema"
     },
     "__createdAt": {
        "type": "string",
