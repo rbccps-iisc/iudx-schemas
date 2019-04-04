@@ -1,35 +1,31 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "describes": "Base schema of catalog entries",
+  "describes": "Base schema of catalog entry of itemType 'data-model'.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
       "describes": "Unique identifier of the data resource within this domain"
     },
+    "name": {
+      "type": "string",
+      "describes": "Unique (descriptive) name for this data model. Although the 'name' should be chosen by provider of data-model, but catalogue can ensure that it is unique."
+    },
     "itemDescription": {
       "type": "string",
       "describes": "Text description of this item."
     },
-    "refDataModel": {
-      "type": "string",
-      "format": "uri",
-      "describes": "Reference to the data model for this catalog item. It is assumed that the referred to data-model(schema) has already been uploaded into the catalog OR stored in a pre-defined repository. The catalogue item comprises of fields from the refDataModel along with the refBaseSchema."
-    },
     "refBaseSchema": {
       "type": "string",
       "format": "uri",
-      "describes": "Reference to the IUDX base schema for this catalog item. It is assumed that the referred base schema has already been uploaded into the catalog OR stored in a pre-defined repository. The catalogue item comprises of fields from the refDataModel along with the refBaseSchema."
+      "describes": "Reference to the IUDX base schema for this catalog entry. It is assumed that the referred base schema has already been uploaded into the catalog OR stored in a pre-defined repository. The catalogue item comprises of fields from the refDataModel along with the refBaseSchema."
     },
-    "refBaseSchemaRelease": {
-      "type": "string",
-      "describes": "Release number/label associated with the IUDX base schema (refBaseSchema) used for this item."
+    "refDataModelItem": {
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToDataModelItemSchema"
     },
-    "provider": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/refToProviderItemSchema"
-    },
-    "tags": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/tagsSchema"
+    "accessObject": {
+        "type": "object",
+        "describes": "Access mechanism object (For example, API Object etc.)"
     },
     "__itemStatus": {
       "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_base_def.json#/definitions/itemStatusSchema"
@@ -60,5 +56,5 @@
   "additionalProperties": {
     "type": ["number", "integer", "null", "string", "object", "boolean", "array"]
   },
-  "required": ["id", "refDataModel", "refBaseSchema", "provider", "tags"]
+  "required": ["id", "refDataModelItem", "accessObject"]
 }

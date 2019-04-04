@@ -41,7 +41,7 @@
           }
        }
     },
-    "providerItemSchema": {
+    "refToProviderItemSchema": {
        "type": "object",
        "allOf": [
          {"$ref": "#/definitions/refToAnotherItemSchema"}
@@ -58,7 +58,7 @@
        },
        "required": ["refItemName", "refItemId"]
     },
-    "resourceServerItemSchema": {
+    "refToResourceServerItemSchema": {
        "type": "object",
        "allOf": [
          {"$ref": "#/definitions/refToAnotherItemSchema"}
@@ -71,6 +71,23 @@
           "refItemType": {
              "type": "string",
              "enum": ["resource-server"]
+          }
+       },
+       "required": ["refItemId", "refItemName"]
+    },
+    "refToDataModelItemSchema": {
+       "type": "object",
+       "allOf": [
+         {"$ref": "#/definitions/refToAnotherItemSchema"}
+       ],
+       "properties": {
+          "refItemName": {
+             "type": "string",
+             "describes": "Name of the data model."
+          },
+          "refItemType": {
+             "type": "string",
+             "enum": ["data-model"]
           }
        },
        "required": ["refItemId", "refItemName"]
