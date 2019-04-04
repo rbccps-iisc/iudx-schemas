@@ -1,8 +1,8 @@
 {
   "id": "34f9409a-4bef-454a-89f1-26789f93a24d",
   "itemDescription": "Description for an CO2 and Temperature sensor",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/dummy_sensor/exdataModel_env.json#/dataModelSchema",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_resource_item_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
     "refItemName": "IUDX-Provider-ABC",
@@ -21,7 +21,7 @@
    "accessInformation": [
       {
         "accessObjectType": "openAPI",
-        "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/examples/exApiObject_env_dummy.json",
+        "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/examples/exApiObject_env_dummy.json",
         "accessVariables": {
            "resourceId": "cv-raman-rd-1130"
          }

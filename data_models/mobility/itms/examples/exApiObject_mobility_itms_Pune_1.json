@@ -75,19 +75,19 @@
                 "type": "object",
                 "properties": {
                     "CURRENT_STATUS": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/CURRENT_STATUS"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/CURRENT_STATUS"
                     },
                     "LASTUPDATEDATETIME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/LASTUPDATEDATETIME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/LASTUPDATEDATETIME"
                     },
                     "POSITION_UPDATE_TIMESTAMP": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/POSITION_UPDATE_TIMESTAMP"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/POSITION_UPDATE_TIMESTAMP"
                     },
                     "NAME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/NAME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/NAME"
                     },
                     "LOCATION": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/LOCATION"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/mobility/itms/mobility_itms_Pune_1.json#/properties/LOCATION"
                     }
                 },
                 "example": "{\n    \"ROUTE_NAME\": null,\n    \"STOP_ID\": null,\n    \"CURRENT_STATUS\": \"IN_TRANSIT_TO\",\n    \"LASTUPDATEDATETIME\": \"2018-06-25T23:03:23.820+05:30\",\n    \"TRIP_ID\": null,\n    \"CURRENT_STOP_SEQUENCE\": null,\n    \"ROUTE_ID\": null,\n    \"POSITION_UPDATE_TIMESTAMP\": \"2018-06-25T16:51:41\",\n    \"STOP_NAME\": null,\n    \"SCHEDULE_RELATIONSHIP\": null,\n    \"NAME\": \"CNG252\"\n}"
