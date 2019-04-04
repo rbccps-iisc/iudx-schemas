@@ -21,11 +21,11 @@
       "describes": "Link to base data model object on which this data model is based. The catalogue entry for this data model, qualifies (adds additional information) to each of the attributes contained in the base data model. For example, an attribute 'temperature' of type 'number' and units 'degreeCelcius' may be defined in the base model and in this catalogue entry further specific constraints may be added like 'minimum', 'maximum' ranges OR sharing policies OR links to semantic contexts for this attribute."
     },
     "provider": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_base_def.json#/definitions/entityIdSchema",
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_base_def.json#/definitions/entityIdSchema",
       "describes": "Describes the 'provider' entity for this catalog item."
     },
     "tags": {
-      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_base_def.json#/definitions/tagsSchema"
+      "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_base_def.json#/definitions/tagsSchema"
     },
     "dataModelSchema": {
         "type": "object",

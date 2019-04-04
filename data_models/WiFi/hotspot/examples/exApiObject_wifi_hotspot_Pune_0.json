@@ -75,29 +75,29 @@
                 "type": "object",
                 "properties": {
                     "DOWNLOAD_RATE": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/DOWNLOAD_RATE"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/DOWNLOAD_RATE"
                     },
                     "LASTUPDATEDATETIME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/LASTUPDATEDATETIME",
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/LASTUPDATEDATETIME",
                         "format": "date-time"
                     },
                     "HOTSPOT_ID": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/HOTSPOT_ID"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/HOTSPOT_ID"
                     },
                     "ACCESS_POINT_COUNT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/ACCESS_POINT_COUNT"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/ACCESS_POINT_COUNT"
                     },
                     "LOCATION_STATUS": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/LOCATION_STATUS"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/LOCATION_STATUS"
                     },
                     "UPLOAD_RATE": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/UPLOAD_RATE"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/UPLOAD_RATE"
                     },
                     "NAME": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/NAME"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/NAME"
                     },
                     "USER_COUNT": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/USER_COUNT"
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/WiFi/hotspot/examples/exdataModel_wifi_hotspot_Pune_0.json#/dataModelSchema/properties/USER_COUNT"
                     }
                 },
                 "example": "{\n    \"DOWNLOAD_RATE\": \"0.0\",\n    \"ACCESS_POINTS\": null,\n    \"LASTUPDATEDATETIME\": \"2019-02-21T12:12:21.046+05:30\",\n    \"HOTSPOT_ID\": \"2\",\n    \"ACCESS_POINT_COUNT\": \"5\",\n    \"LOCATION_STATUS\": \"ON\",\n    \"UPLOAD_RATE\": \"0.0\",\n    \"NAME\": \"Chhatrapati Sambhaji Raje\",\n    \"LOCATION_TYPE\": null,\n    \"USER_COUNT\": \"11\"\n}"
