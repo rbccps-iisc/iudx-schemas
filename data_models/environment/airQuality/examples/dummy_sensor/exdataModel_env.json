@@ -2,9 +2,9 @@
   "id": "catalogue-env-example",
   "itemDescription": "Data Model for CO2, Temperature sensor",
   "tags": ["air", "pollution", "CO2","Temperature"],
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.1/iudx_dataModel_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_dataModel_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
-  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/environment/airQuality/env_aqm_climoPune_0.json",
+  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
   "provider": {
     "refItemName": "IUDX-Provider-ABC",
     "refItemId": "36474639-8afe-95bd-901e-987abfe102de"
@@ -19,7 +19,7 @@
       "properties": {
           "location": {
              "describes": "Physical location of the AQM sensor", 
-             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
+             "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/locationDefs.json#/definitions/locationSchema"
           },
           "NAME": {
               "describes": "Name of the device.",

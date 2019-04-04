@@ -2,7 +2,7 @@
   "id": "8898kwiorit9490494",
   "itemDescription": "Description of a resource",
   "refDataModel": "not_required.json",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/test/base_schemas/v0.0.0/iudx_data_item_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/iudx_data_item_schema.json",
   "refBaseSchemaRelease": "v0.0.0",
   "provider": {
     "entityId": "PSCDCL",
