@@ -11,7 +11,7 @@
             "description": "Resource server",
             "variables": {
                 "serverIP": {
-                    "default": "localhost"
+                    "default": "pune.iudx.org.in"
                 },
                 "serverPort": {
                     "default": "8080"
