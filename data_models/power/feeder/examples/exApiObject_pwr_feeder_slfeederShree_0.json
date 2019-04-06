@@ -154,6 +154,18 @@
     "components": {
         "schemas": {
             "SensorPacket": {
+                "description": "Wrapper object for the sensor message",
+                "required": [
+                    "StreetLightingSreePanel"
+                ],
+                "type": "object",
+                "properties": {
+                    "StreetLightingSreePanel": {
+                        "$ref": "#/components/schemas/StreetLightingSreePanel"
+                    }
+                }
+            },
+            "StreetLightingSreePanel": {
                 "title": "Root Type for SensorPacket",
                 "description": "Sensor response from the api as json object",
                 "type": "object",

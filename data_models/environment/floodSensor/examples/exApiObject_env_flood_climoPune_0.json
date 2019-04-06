@@ -135,6 +135,18 @@
     "components": {
         "schemas": {
             "SensorPacket": {
+                "description": "Wrapper object for the sensor message",
+                "required": [
+                    "FloodSensor"
+                ],
+                "type": "object",
+                "properties": {
+                    "FloodSensor": {
+                        "$ref": "#/components/schemas/FloodSensor"
+                    }
+                }
+            },
+            "FloodSensor": {
                 "title": "Root Type for SensorPacket",
                 "description": "Sensor response from the api as json object",
                 "type": "object",

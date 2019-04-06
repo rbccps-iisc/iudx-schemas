@@ -70,6 +70,18 @@
     "components": {
         "schemas": {
             "SensorPacket": {
+                "description": "Wrapper object for the sensor message",
+                "required": [
+                    "WiFiHotspot"
+                ],
+                "type": "object",
+                "properties": {
+                    "WiFiHotspot": {
+                        "$ref": "#/components/schemas/WiFiHotspot"
+                    }
+                }
+            },
+            "WiFiHotspot": {
                 "title": "Root Type for SensorPacket",
                 "description": "JSON sensor message",
                 "type": "object",
