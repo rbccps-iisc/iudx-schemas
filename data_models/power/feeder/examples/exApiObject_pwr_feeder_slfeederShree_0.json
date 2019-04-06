@@ -23,6 +23,7 @@
         "/latest/streetlight-feeder-sree/{NAME}/": {
             "get": {
                 "description": "Get feeder station data",
+                "operationId": "latest",
                 "parameters": [
                     {
                         "name": "NAME",
@@ -80,6 +81,7 @@
         "/query/streetlight-feeder-sree/{NAME}/{startTime}/{endTime}/": {
             "get": {
                 "description": "Get feeder station data",
+                "operationId": "query",
                 "parameters": [
                     {
                         "name": "NAME",

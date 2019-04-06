@@ -25,6 +25,7 @@
         "/query/flood-sensor/{NAME}/{startTime}/{endTime}": {
             "get": {
                 "description": "Get the query results",
+                "operationId": "query",
                 "responses": {
                     "200": {
                         "description": "Get array of flood sensor readings",
@@ -88,6 +89,8 @@
         },
         "/latest/flood-sensor/{NAME}": {
             "get": {
+                "description": "Get the latest data",
+                "operationId": "latest",
                 "parameters": [
                     {
                         "name": "NAME",

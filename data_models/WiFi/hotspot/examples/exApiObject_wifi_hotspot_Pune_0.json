@@ -23,6 +23,7 @@
         "/latest/wifi-hotspot/{NAME}": {
             "get": {
                 "description": "Get the sensor message as an array between given time points",
+                "operationId": "latest",
                 "responses": {
                     "200": {
                         "description": "Sensor Message as JSON",
