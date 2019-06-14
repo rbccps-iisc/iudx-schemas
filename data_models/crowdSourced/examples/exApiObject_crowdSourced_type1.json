@@ -84,11 +84,19 @@
             "ImagesArrayWrapper": {
                 "description": "Wrapper object for the images array",
                 "required": [
-                    "i"
+                    "All_Issues",
+                    "status",
+                    "ErrorMessage"
                 ],
                 "type": "object",
                 "properties": {
-                    "ImagesArray": {
+                    "status":{
+                        "type": "integer"
+                    },
+                    "ErrorMessage":{
+                        "type": "string"
+                    },
+                    "All_Issues": {
                         "$ref": "#/components/schemas/ImagesArray"
                     }
                 }
@@ -121,18 +129,10 @@
             },
             "ImagesArray": {
                 "description": "Array of image objects",
-                "required": [
-                    "array"
-                ],
-                "type": "object",
-                "properties": {
-                    "array": {
-                        "description": "Image Array",
-                        "type": "array",
-                        "items": {
-                            "$ref": "#/components/schemas/ImagesObject"
-                        }
-                    }
+                "type": "array",
+                "items": {
+                    "description": "Image Array",
+                    "$ref": "#/components/schemas/ImagesObject"
                 }
             }
         }
