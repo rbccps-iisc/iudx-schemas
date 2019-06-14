@@ -1,0 +1,72 @@
+{
+  "id": "897543945-437a-4757-adef345834",
+  "name": "catalogue-crowdSourced_type1.json",
+  "itemDescription": "Crowd Sourced type 1 data",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_data_model_schema.json",
+  "refBaseSchemaRelease": "v0.0.1",
+  "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json",
+  "provider": {
+    "refItemName": "ChangeBhai",
+    "refItemId": "al74709345984395007094"
+  },
+  "tags": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Road Markings","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
+  "__itemStatus": "active",
+  "__itemType": "data-model",
+  "__createdAt": "2019-02-20T10:30:06.093121",
+  "dataModelSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+    "describes": "Crowd Sourced type 1 data",
+    "properties": {
+        "id": {
+            "describes": "id of the geo-tagged image",
+            "type": "string"
+        },
+        "LocationRange": {
+            "type": "object",
+            "properties": {
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                },
+                "radius": {
+                    "type": "number",
+                    "describes": "Radius in meters"
+                }
+            }
+        },
+        "Latitude": {
+           "describes": "Latitude of the geo-tagged image", 
+           "type": "string"
+        },
+        "Longitude": {
+           "describes": "Longitude of the geo-tagged image", 
+           "type": "string"
+        },
+        "Radius": {
+           "describes": "Radius of the area for which geo-tagged images are required", 
+           "type": "string"
+        },
+        "Image": {
+           "describes": "Link of the image", 
+           "type": "string",
+           "format": "uri"
+        },
+        "Category": {
+            "describes": "Classification of the image",
+            "type": "string",
+            "enum": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Road Markings","Traffic Signals","Traffic Violations","Road Markings"]
+        },
+        "Severity": {
+           "describes": "Severity of the category", 
+           "type": "string",
+           "enum": ["low","high","medium"]
+        }
+
+    },
+    "required": [
+        "id", "Latitude", "Longitude","Image"
+    ]
+}

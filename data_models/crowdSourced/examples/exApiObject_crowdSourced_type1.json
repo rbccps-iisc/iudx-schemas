@@ -1,0 +1,140 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "CrowdSourced_Type1",
+        "description": "Crowd Sourced Type1 API object",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://{ip}:{port}/api/1.0.0/resource/",
+            "description": "API server URL",
+            "variables": {
+                "ip": {
+                    "default": "localhost",
+                    "description": "For local testing"
+                },
+                "port": {
+                    "default": "8080",
+                    "description": "For local testing"
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/search/{NAME}/{lat}/{lon}/{radius}": {
+            "get": {
+                "description": "Get all geo-tagged images within the region",
+                "operationId": "query",
+                "responses": {
+                    "200": {
+                        "description": "Get all geo-tagged images within the region",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ImagesArrayWrapper"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "name": "NAME",
+                    "in": "path",
+                    "description": "Name of the crowdSourced data platform",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "lat",
+                    "in": "path",
+                    "description": "latitude",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "lon",
+                    "in": "path",
+                    "description": "longitude",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "radius",
+                    "in": "path",
+                    "description": "radius",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    },
+    "components": {
+        "schemas": {
+            "ImagesArrayWrapper": {
+                "description": "Wrapper object for the images array",
+                "required": [
+                    "i"
+                ],
+                "type": "object",
+                "properties": {
+                    "ImagesArray": {
+                        "$ref": "#/components/schemas/ImagesArray"
+                    }
+                }
+            },
+            "ImagesObject": {
+                "title": "Root Type for ImagesArray",
+                "description": "Image array response from the api as json object",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/id"
+                    },
+                    "Latitude": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Latitude"
+                    },
+                    "Longitude": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Longitude"
+                    },
+                    "Image": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Image"
+                    },
+                    "Category": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Category"
+                    },
+                    "Severity": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Severity"
+                    }
+                },
+                "example": "{\"id\":\"19822022\",\"Latitude\":\"18.5189\",\"Longitude\":\"73.8779\",\"Image\":\"http:\/\/trackmyapcc.com\/service\/complaint-images\/2016-09-30-11-51-15.png\",\"Category\":\"Garbage\",\"Severity\":\"low\"}"
+            },
+            "ImagesArray": {
+                "description": "Array of image objects",
+                "required": [
+                    "array"
+                ],
+                "type": "object",
+                "properties": {
+                    "array": {
+                        "description": "Image Array",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ImagesObject"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
