@@ -1,0 +1,123 @@
+{
+	"id": "897543945-437a-4757-adef345834",
+	"name": "catalogue-crowdSourced_type2.json",
+	"itemDescription": "Crowd Sourced type 2 data",
+	"refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_data_model_schema.json",
+	"refBaseSchemaRelease": "v0.0.1",
+	"baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type2.json",
+	"provider": {
+		"refItemName": "Safetipin",
+		"refItemId": "al74709345984395007094"
+	},
+	"__itemStatus": "active",
+	"__itemType": "data-model",
+	"__createdAt": "2019-02-20T10:30:06.093121",
+	"dataModelSchema": {
+		"$schema": "http://json-schema.org/draft-07/schema#",
+		"type": "object",
+		"describes": "Crowd Sourced type 2 data",
+		"properties": {
+			"id": {
+				"describes": "id of the geo-tagged image",
+				"type": "string"
+			},
+			"LocationRange": {
+				"type": "object",
+				"properties": {
+					"latitude": {
+						"type": "number"
+					},
+					"longitude": {
+						"type": "number"
+					},
+					"radius": {
+						"type": "number",
+						"describes": "Radius in meters"
+					}
+				}
+			},
+			"Latitude": {
+				"describes": "Latitude of the geo-tagged image", 
+				"type": "string"
+			},
+			"Longitude": {
+				"describes": "Longitude of the geo-tagged image", 
+				"type": "string"
+			},
+			"Audit Date": {
+				"describes": "Date on which the image was cpatured", 
+				"type": "string"
+			},
+			"Audit Time": {
+				"describes": "Time at which the image was cpatured", 
+				"type": "string"
+			},
+			"Lighting": {
+				"describes": "Indicates if the place is well-lighted, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Openness": {
+				"describes": "Gives a measure of the free area, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Visibility": {
+				"describes": "Clear visibilty of the things in the image, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"People": {
+				"describes": "Number of people in the image, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Security": {
+				"describes": "Security in the place depending on the surroundings, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Walkpath": {
+				"describes": "Presence and usability of a walkway, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Public Transport": {
+				"describes": "Availabity of public transport, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Gender Usage": {
+				"describes": "Gender friendly atmosphere of the locality, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Feeling": {
+				"describes": "Feel of safety in the locality, rated over a score of 0-3.", 
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 3
+			},
+			"Safety Score": {
+				"describes": "Safetipin computed safety score for the locality", 
+				"type": "number"
+			},
+			"Images": {
+				"describes": "Link of the image", 
+				"type": "array",
+				"items": {
+					"type": "string",
+					"format": "uri"
+				}	
+			}
+		}
+	}
+}
