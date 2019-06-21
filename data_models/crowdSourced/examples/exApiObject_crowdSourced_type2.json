@@ -1,0 +1,171 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "CrowdSourced_Type2",
+        "description": "Crowd Sourced Type2 API object",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://{ip}:{port}/api/1.0.0/resource/",
+            "description": "API server URL",
+            "variables": {
+                "ip": {
+                    "default": "localhost",
+                    "description": "For local testing"
+                },
+                "port": {
+                    "default": "8080",
+                    "description": "For local testing"
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/search/{NAME}/{lat}/{lon}/{radius}": {
+            "get": {
+                "description": "Get all geo-tagged images within the region",
+                "operationId": "query",
+                "responses": {
+                    "200": {
+                        "description": "Get all geo-tagged images within the region",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ImagesArrayWrapper"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "name": "NAME",
+                    "in": "path",
+                    "description": "Name of the crowdSourced data platform",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "lat",
+                    "in": "path",
+                    "description": "latitude",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "lon",
+                    "in": "path",
+                    "description": "longitude",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "radius",
+                    "in": "path",
+                    "description": "radius",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    },
+    "components": {
+        "schemas": {
+            "ImagesArrayWrapper": {
+                "description": "Wrapper object for the images array",
+                "required": [
+                    "All_Issues",
+                    "status",
+                    "ErrorMessage"
+                ],
+                "type": "object",
+                "properties": {
+                    "status":{
+                        "type": "integer"
+                    },
+                    "ErrorMessage":{
+                        "type": "string"
+                    },
+                    "All_Issues": {
+                        "$ref": "#/components/schemas/ImagesArray"
+                    }
+                }
+            },
+            "ImagesObject": {
+                "title": "Root Type for ImagesArray",
+                "description": "Image array response from the api as json object",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/id"
+                    },
+                    "Latitude": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Latitude"
+                    },
+                    "Longitude": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Longitude"
+                    },
+                    "Audit_Date": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Audit_Date"
+                    },
+                    "Audit_Time": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Audit_Time"
+                    },
+                    "Lighting": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Lighting"
+                    },
+                    "Openness": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Openness"
+                    },
+                    "Visibility": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Visibility"
+                    },
+                    "People": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/People"
+                    },
+                    "Security": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Security"
+                    },
+                    "Walkpath": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Walkpath"
+                    },
+                    "Public_Transport": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Public_Transport"
+                    },
+                    "Gender_Usage": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Gender_Usage"
+                    },
+                    "Feeling": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Feeling"
+                    },
+                    "Safety_Score": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Safety_Score"
+                    },
+                    "Images": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type2.json#/dataModelSchema/properties/Images"
+                    }
+                },
+                "example": "{\"id\":\"19822022\",\"Latitude\":\"18.5189\",\"Longitude\":\"73.8779\",\"Audit Date\":\"2/5/19\",\"Audit Time\":\"20:50:01\",\"Lighting\":1,\"Openness\":1,\"Visibility\":1,\"People\":1,\"Security\":1,\"Walkpath\":1,\"Public Transport\":1,\"Gender Usage\":1,\"Feeling\":1,\"Safety Score\":3.2,\"Images\":\"http://trackmyapcc.com/service/complaint-images/2016-09-30-11-51-15.png\"}"
+            },
+            "ImagesArray": {
+                "description": "Array of image objects",
+                "type": "array",
+                "items": {
+                    "description": "Image Array",
+                    "$ref": "#/components/schemas/ImagesObject"
+                }
+            }
+        }
+    }
+}
+
