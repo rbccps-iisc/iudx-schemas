@@ -30,11 +30,11 @@
 			"describes": "Longitude of the geo-tagged image", 
 			"type": "string"
 		},
-		"Audit Date": {
+		"Audit_Date": {
 			"describes": "Date on which the image was cpatured", 
 			"type": "string"
 		},
-		"Audit Time": {
+		"Audit_Time": {
 			"describes": "Time at which the image was cpatured", 
 			"type": "string"
 		},
@@ -74,13 +74,13 @@
 			"minimum": 0,
    			"maximum": 3
 		},
-		"Public Transport": {
+		"Public_Transport": {
 			"describes": "Availabity of public transport, rated over a score of 0-3.", 
 			"type": "integer",
 			"minimum": 0,
    			"maximum": 3
 		},
-		"Gender Usage": {
+		"Gender_Usage": {
 			"describes": "Gender friendly atmosphere of the locality, rated over a score of 0-3.", 
 			"type": "integer",
 			"minimum": 0,
@@ -92,7 +92,7 @@
 			"minimum": 0,
    			"maximum": 3
 		},
-		"Safety Score": {
+		"Safety_Score": {
 			"describes": "Safetipin computed safety score for the locality", 
 			"type": "number"
 		},
