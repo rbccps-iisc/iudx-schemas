@@ -55,8 +55,5 @@
            "enum": ["low","high","medium"]
         }
 
-    },
-    "required": [
-        "id", "Latitude", "Longitude","Image"
-    ]
+    }
 }

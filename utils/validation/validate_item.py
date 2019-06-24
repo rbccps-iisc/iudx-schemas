@@ -2,13 +2,12 @@ import os
 import json
 import jsonschema
 import sys
-import wget
 
 cwd = os.getcwd()
 base_dir_abs_path = cwd+'/'
 
 if (len(sys.argv[1:])==0):
-  print "Usage: python validate_item.py rel-path-to-item"
+  print (("Usage: python validate_item.py rel-path-to-item"))
   exit()
 else:
   data_path = os.path.join(base_dir_abs_path, sys.argv[1])
@@ -48,7 +47,7 @@ try:
  jsonschema.validate(data, item_schema)
 
 except jsonschema.exceptions.ValidationError as errV:
- print "Validation Error Occured"
+ print ("Validation Error Occured")
  #print errV
  #v = jsonschema.Draft7Validator(schema, types=(), resolver=resolver, format_checker=None)
  v = jsonschema.Draft7Validator(item_schema, types=(), format_checker=None)
@@ -56,8 +55,8 @@ except jsonschema.exceptions.ValidationError as errV:
  #    print(error.message)
  errors = sorted(v.iter_errors(data), key=lambda e: e.path)
  for error in errors:
-     print error.message
+     print (error.message)
 
 except jsonschema.exceptions.SchemaError as errS:
- print "Schema Error Occured"
- print errS.message
+ print ("Schema Error Occured")
+ print (errS.message)
