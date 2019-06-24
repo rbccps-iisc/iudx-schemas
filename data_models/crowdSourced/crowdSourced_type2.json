@@ -19,7 +19,11 @@
 				"radius": {
 					"type": "number",
 					"describes": "Radius in meters"
-				}
+				},
+                "coverageDescription":{
+                    "type": "string",
+                    "describes": "Name of city and/or areas/localities within the city."
+                }
 			}
 		},
 		"Latitude": {

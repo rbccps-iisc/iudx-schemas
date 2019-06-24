@@ -1,11 +1,12 @@
 {
   "id": "akdfi74938nid8kjfvko4",
-  "itemDescription": "Crowd Sourced type 2 data",
+  "itemDescription": "SafetiPin crowdSourced data",
   "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type2.json",
   "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_resource_item_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
-    "refItemName": "Safetipin",
+    "entityId": "SafetiPin",
+    "entityIdentityType": "X509",
     "refItemId": "al74709345984395007094"
   },
   "resourceServer": {
@@ -21,16 +22,19 @@
   "__createdAt": "2019-02-20T10:30:06.093121",
   "accessInformation": [
      {
-       "accessObjectType": "openAPI",
-       "accessObject": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type2.json",
+       "accessSchemaType": "openAPI",
+       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
        "accessVariables": {
-          "NAME": "safetipin"
+          "resourceServerId": "https://pune.iudx.org.in:443",
+          "resourceClass": "crowdSourced"
        }
      }
   ],
+  "NAME": "safetipin",
   "LocationRange": {
     "latitude": 18.530257,
     "longitude": 73.847793,
-    "radius": 1000
+    "radius": 50000,
+    "coverageDescription": "Pune"
   }
 }
