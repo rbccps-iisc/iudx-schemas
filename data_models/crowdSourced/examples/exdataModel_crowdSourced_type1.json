@@ -9,7 +9,7 @@
         "refItemName": "ChangeBhai",
         "refItemId": "al74709345984395007094"
     },
-    "tags": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Road Markings","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
+    "tags": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
     "__itemStatus": "active",
     "__itemType": "data-model",
     "__createdAt": "2019-02-20T10:30:06.093121",
@@ -62,7 +62,7 @@
             "Category": {
                 "describes": "Classification of the image",
                 "type": "string",
-                "enum": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Road Markings","Traffic Signals","Traffic Violations","Road Markings"]
+                "enum": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Traffic Signals","Traffic Violations","Road Markings"]
             },
             "Severity": {
                "describes": "Severity of the category", 
@@ -70,9 +70,6 @@
                "enum": ["low","high","medium"]
             }
 
-        },
-        "required": [
-            "id", "Latitude", "Longitude","Image"
-        ]
+        }
     }
 }

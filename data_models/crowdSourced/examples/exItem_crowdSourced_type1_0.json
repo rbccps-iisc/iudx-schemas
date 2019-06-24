@@ -1,35 +1,36 @@
 {
-  "id": "akdfi74938nid8kjfvko4",
-  "itemDescription": "ChangeBhai crowdSourced data",
-  "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_resource_item_schema.json",
-  "refBaseSchemaRelease": "v0.0.1",
-  "provider": {
-    "entityId": "ChangeBhai",
-    "entityIdentityType": "X509",
-    "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-    "entityURL" : "https://example.iudx-provider.org"
-  },
-  "tags": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Road Markings","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
-  "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/search/changebhai/18.530257/73.847793/1000",
-  "__itemStatus": "active",
-  "__itemType": "resource-item",
-  "__createdAt": "2019-02-20T10:30:06.093121",
-  "accessInformation": [
-     {
-       "accessSchemaType": "openAPI",
-       "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
-       "accessVariables": {
-          "resourceServerId": "https://pune.iudx.org.in:443",
-          "resourceClass": "crowdSourced"
-       }
-     }
-  ],
-  "NAME": "changebhai",
-  "locationCoverage": {
-    "latitude": 18.530257,
-    "longitude": 73.847793,
-    "radius": 50000,
-    "coverageDescription": "Pune"
-  }
+    "id": "akdfi74938nid8kjfvko4",
+    "itemDescription": "ChangeBhai crowdSourced data",
+    "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json",
+    "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+    "refBaseSchemaRelease": "v0.0.1",
+    "provider": {
+        "entityId": "ChangeBhai",
+        "entityIdentityType": "X509",
+        "entityIdentityProviderURL" : "https://ca.iudx.org.in",
+        "entityURL" : "https://example.iudx-provider.org"
+    },
+    "tags": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
+    "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/search/changebhai/18.530257/73.847793/1000",
+    "__itemStatus": "active",
+    "__itemType": "resource-item",
+    "__createdAt": "2019-02-20T10:30:06.093121",
+    "accessInformation": [
+        {
+            "accessSchemaType": "openAPI",
+            "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+            "accessVariables": {
+                "resourceId": "changebhai",
+                "resourceServerId": "https://pune.iudx.org.in:443",
+                "resourceClass": "crowdSourced"
+            }
+        }
+    ],
+    "NAME": "changebhai",
+    "locationCoverage": {
+        "latitude": 18.530257,
+        "longitude": 73.847793,
+        "radius": 50000,
+        "coverageDescription": "Pune"
+    }
 }
