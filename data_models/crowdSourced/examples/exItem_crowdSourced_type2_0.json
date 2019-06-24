@@ -23,11 +23,11 @@
             "accessVariables": {
                 "resourceId": "safetipin",
                 "resourceServerId": "https://pune.iudx.org.in:443",
-                "resourceClass": "crowdSourced"
+                "resourceClass": "crowdSourced",
+                "NAME": "safetipin"
             }
         }
     ],
-    "NAME": "safetipin",
     "locationCoverage": {
         "latitude": 18.530257,
         "longitude": 73.847793,
