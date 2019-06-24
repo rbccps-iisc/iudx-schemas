@@ -16,14 +16,15 @@
     "dataModelSchema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
-        "describes": "Crowd Sourced type 1 data",
+        "describes": "Crowd Sourced dataset provided by ChangeBhai.org. Contains geo-tagged images along with public-issue annotations.",
         "properties": {
             "id": {
                 "describes": "id of the geo-tagged image",
                 "type": "string"
             },
-            "LocationRange": {
+            "locationCoverage": {
                 "type": "object",
+                "describes": "Area covered by images contained in this dataset. The coverage area is described using a centre point and and radius around the centre point.",
                 "properties": {
                     "latitude": {
                         "type": "number"
@@ -34,25 +35,29 @@
                     "radius": {
                         "type": "number",
                         "describes": "Radius in meters"
+                    },
+                    "coverageDescription":{
+                        "type": "string",
+                        "describes": "Name of city and/or areas/localities within the city."
                     }
                 }
             },
             "Latitude": {
-                "describes": "Latitude of the geo-tagged image", 
-                "type": "string"
+               "describes": "Latitude of the geo-tagged image", 
+               "type": "string"
             },
             "Longitude": {
-                "describes": "Longitude of the geo-tagged image", 
-                "type": "string"
+               "describes": "Longitude of the geo-tagged image", 
+               "type": "string"
             },
             "Radius": {
-                "describes": "Radius of the area for which geo-tagged images are required", 
-                "type": "string"
+               "describes": "Radius of the area for which geo-tagged images are required", 
+               "type": "string"
             },
             "Image": {
-                "describes": "Link of the image", 
-                "type": "string",
-                "format": "uri"
+               "describes": "Link of the image", 
+               "type": "string",
+               "format": "uri"
             },
             "Category": {
                 "describes": "Classification of the image",
@@ -60,9 +65,9 @@
                 "enum": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Road Markings","Traffic Signals","Traffic Violations","Road Markings"]
             },
             "Severity": {
-                "describes": "Severity of the category", 
-                "type": "string",
-                "enum": ["low","high","medium"]
+               "describes": "Severity of the category", 
+               "type": "string",
+               "enum": ["low","high","medium"]
             }
 
         },

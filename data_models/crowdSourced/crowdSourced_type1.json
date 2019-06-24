@@ -1,14 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "describes": "Crowd Sourced type 1 data",
+    "describes": "Crowd Sourced dataset provided by ChangeBhai.org. Contains geo-tagged images along with public-issue annotations.",
     "properties": {
         "id": {
             "describes": "id of the geo-tagged image",
             "type": "string"
         },
-        "LocationRange": {
+        "locationCoverage": {
             "type": "object",
+            "describes": "Area covered by images contained in this dataset. The coverage area is described using a centre point and and radius around the centre point.",
             "properties": {
                 "latitude": {
                     "type": "number"
@@ -19,6 +20,10 @@
                 "radius": {
                     "type": "number",
                     "describes": "Radius in meters"
+                },
+                "coverageDescription":{
+                    "type": "string",
+                    "describes": "Name of city and/or areas/localities within the city."
                 }
             }
         },
