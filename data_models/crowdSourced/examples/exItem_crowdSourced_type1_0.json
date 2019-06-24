@@ -8,15 +8,16 @@
         "entityId": "ChangeBhai",
         "entityIdentityType": "X509",
         "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-        "entityURL" : "https://example.iudx-provider.org"
+        "entityURL" : "https://www.changebhai.in/"
     },
-    "tags": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
+    "tags": ["crowd","sourced","Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
     "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/search/changebhai/18.530257/73.847793/1000",
     "__itemStatus": "active",
     "__itemType": "item",
     "__createdAt": "2019-02-20T10:30:06.093121",
     "accessInformation": [
         {
+            "resourceType": "table",
             "accessSchemaType": "openAPI",
             "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
             "accessVariables": {
