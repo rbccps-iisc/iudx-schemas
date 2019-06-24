@@ -18,7 +18,7 @@
     "tags": ["Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
     "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/search/changebhai/18.530257/73.847793/1000",
     "__itemStatus": "active",
-    "__itemType": "resource-item",
+    "__itemType": "item",
     "__createdAt": "2019-02-20T10:30:06.093121",
     "accessInformation": [
         {
