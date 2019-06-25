@@ -1,57 +1,70 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "describes": "Base schema of catalog entries",
-  "type": "object",
-  "definitions": {
-     "locationSchema": {
-      "type": "object",
-      "describes": "Schema to describe a geographic location",
-      "@context": "https://schema.org/GeoCoordinates",
-      "properties": {
-         "address": {
-            "type": "string",
-            "describes": "Address of the location"
-         },
-         "addressCountry": {
-            "type": "string",
-            "describes": ""
-         },
-         "latitude": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "Base schema of catalog entries",
+    "type": "object",
+    "definitions": {
+        "locationSchema": {
+            "type": "object",
+            "describes": "Schema to describe a geographic location",
+            "@context": "https://schema.org/GeoCoordinates",
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "describes": "Address of the location"
+                },
+                "addressCountry": {
+                    "type": "string",
+                    "describes": ""
+                },
+                "latitude": {
+                    "type": "number",
+                    "describes": "Latitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
+                },
+                "longitude": {
+                    "type": "number",
+                    "describes": "Longitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
+                },
+                "elevation": {
+                    "type": "number",
+                    "describes": "Elevation of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
+                },
+                "postalCode": {
+                    "type": "string",
+                    "describes": "Pin code of the location"
+                }
+            },
+            "additionalProperties": false
+        },
+        "additionalLocationSchema": {
+            "type": "object",
+            "describes": "Other ways of describing a location. For example, geoHash, mapid etc."
+        },
+        "geoJSONGeometrySchema": {
+            "@context": "https://purl.org/geojson/vocab#geometry",
+            "$ref": "http://geojson.org/schema/Geometry.json#"
+        },
+        "latitude": {
+            "@context": "https://schema.org/latitude",
             "type": "number",
             "describes": "Latitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
-         },
-         "longitude": {
+        },
+        "longitude": {
+            "@context": "https://schema.org/longitude",
             "type": "number",
             "describes": "Longitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
-         },
-         "elevation": {
-            "type": "number",
-            "describes": "Elevation of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
-         },
-         "postalCode": {
-            "type": "string",
-            "describes": "Pin code of the location"
-         }
-      },
-      "additionalProperties": false
-     },
-     "additionalLocationSchema": {
-       "type": "object",
-       "describes": "Other ways of describing a location. For example, geoHash, mapid etc."
-     },
-     "geoJSONGeometrySchema": {
-        "@context": "https://purl.org/geojson/vocab#geometry",
-        "$ref": "http://geojson.org/schema/Geometry.json#"
-     },
-     "latitude": {
-        "@context": "https://schema.org/latitude",
-        "type": "number",
-        "describes": "Latitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
-     },
-     "longitude": {
-        "@context": "https://schema.org/longitude",
-        "type": "number",
-        "describes": "Longitude of a location in WGS 84 (https://en.wikipedia.org/wiki/World_Geodetic_System) coordinate system"
-     }
-  }
+        },
+        "position": {
+            "description": "A single position",
+            "type": "array",
+            "minItems": 2,
+            "items": [ { "type": "number" }, { "type": "number" } ],
+            "additionalItems": false
+        },
+        "geoJSONPolygon": {
+            "describes": "A polygon described by 4 points where the first equals the last",
+            "type": "array",
+            "items": { "$ref": "#/definitions/position" },
+            "minItems": 4
+        }
+    }
 }
