@@ -7,25 +7,18 @@
 			"describes": "id of the geo-tagged image",
 			"type": "string"
 		},
-		"LocationRange": {
-			"type": "object",
-			"properties": {
-				"latitude": {
-					"type": "number"
-				},
-				"longitude": {
-					"type": "number"
-				},
-				"radius": {
-					"type": "number",
-					"describes": "Radius in meters"
-				},
+        "locationCoverage": {
+            "type": "object",
+            "properties": {
+                "area": {
+                    "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/schema_defs/locationDefs.json#/definitions/geoJSONPolygon"
+                },
                 "coverageDescription":{
                     "type": "string",
                     "describes": "Name of city and/or areas/localities within the city."
                 }
-			}
-		},
+            }
+        },
 		"Latitude": {
 			"describes": "Latitude of the geo-tagged image", 
 			"type": "string"

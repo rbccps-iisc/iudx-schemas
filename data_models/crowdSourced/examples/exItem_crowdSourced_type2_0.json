@@ -29,9 +29,7 @@
         }
     ],
     "locationCoverage": {
-        "latitude": 18.530257,
-        "longitude": 73.847793,
-        "radius": 50000,
-        "coverageDescription": "Pune"
+        "area": [ [18.549778, 73.809850], [18.568344, 73.766233], [18.587037, 73.759306], [18.567480, 73.814160] ],
+        "coverageDescription": "Pune ABD Area"
     }
 }
